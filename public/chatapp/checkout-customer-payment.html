@@ -309,20 +309,32 @@
                     document.querySelector('.alert-chatapp-js').style.display = 'block';
                 }else{
                     if (window.opener != null && !window.opener.closed) {
-                        let messages = window.opener.document.getElementById('messages');
                         switch(result.status){
                             case "00": //Payment Success
-                                window.opener.alertPaymentSuccess();
+                                let contentSuccess = '<div class="chatapp__order__head payment-success">'
+                                                + '<h4 class="order__heading order__heading--confirm">Purchased Successfully</h4>'
+                                            + '</div>'
+                                            + '<div class="chatapp__order__body chatapp__order__body--coupon">'
+                                                + "<div class='chatapp__order__coupon text-center'>Your order has been placed.<br/>We'll send you an email with your order details</div>"
+                                            + '</div>';
+                                window.opener.receivedPopup(contentSuccess);
                                 break;
                             case "01": //Payment pending
-                                window.opener.alertPaymentPending();
+                                let contentPending = '<div class="chatapp__order__head payment-pending">'
+                                                + '<h4 class="order__heading order__heading--confirm order__heading--pending">Order Pending</h4>'
+                                            + '</div>'
+                                            + '<div class="chatapp__order__body chatapp__order__body--coupon chatapp__order__coupon--pending">'
+                                                + "<div class='chatapp__order__coupon text-center'>Although your payment was processed, the result is still pending. Please check your email for the status of your order.</div>"
+                                            + '</div>';
+                                window.opener.receivedPopup(contentPending);
                                 break;
                             case "02": //Payment danger
-                                window.opener.reselectPaymentMethodChatApp();
+                                let contentUnsuccess = '<div class="chatapp__order__head payment-unsuccess">'
+                                                            + '<h4 class="order__heading order__heading--confirm order__heading--danger">Payment Unsuccessful</h4>'
+                                                        + '</div>';
+                                window.opener.receivedPopup(contentUnsuccess);
                                 break;
                         }
-                        window.opener.document.querySelector('.chatapp-select-hidden-js').style.display = 'none';
-                        messages.scrollTop = messages.scrollHeight;
                     }
                     window.close();
                 }
