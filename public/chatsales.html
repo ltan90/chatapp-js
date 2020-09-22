@@ -27,7 +27,7 @@
                     </div>
                     <div class="panel__header__welcome chatapp-logo text-center">
                         <span class="panel__logo">
-                            <img src="images/logo_chatapp.svg" alt="logo"/>
+                            <img src="assets/images/logo_chatapp.svg" alt="logo"/>
                         </span>
                         <h4 class="panel__title panel__title--welcome">Welcome to Live Chat</h4>
                     </div>
@@ -37,9 +37,9 @@
                         <span class="chatapp__form__hello">Hello! How can we help you?</span>
                         <div class="panel__input panel__input--login chatapp__radius">
                             <form action="" method="post" class="chatapp-login-js">
-								<input type="email" name="email" class="panel__input__control" placeholder="Please enter your email..."/>
-								<input type="hidden" name="room" class="random-room" value="sales">
-                                <button type="submit" class="btn__login text-center">Start Chat Without Login</button>
+                                <input type="email" name="email" class="panel__input__control" placeholder="Please enter your email..."/>
+                                <input type="hidden" name="room" class="random-room" value="sales">
+                                <button class="btn__login text-center">Start Chat Without Login</button>
                                 <button class="chatapp__radius btn__login btn__login--signup text-center" >Sign Up or Login </button>
                             </form>
                         </div>
@@ -70,19 +70,11 @@
                 <span class="chatapp__icon__arrow"></span>
             </span>
         </section>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
-		<script src="js/cart.js"></script>
+        <script src="../assets/js/main.js"></script>
+        <script src="../assets/js/cart.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
 		<script>
-            //Toggle ChatApp icon
-            let toggleChatApp = document.querySelectorAll('.chatapp-close-js');
-            for(let i = 0; i < toggleChatApp.length; i++){
-                toggleChatApp[i].addEventListener('click', function(){
-                    document.querySelector('.chatapp__icon').classList.toggle('chatapp-hidden');
-                    document.querySelector('.panel').classList.toggle('panel-active');
-                });
-            }
-			//const socket = io('localhost:3000');
-			const socket = io('https://chatnode.azurewebsites.net/');
+			const socket = io('localhost:3000');
 			//if(document.querySelector('.random-room')) document.querySelector('.random-room').value = Math.floor((Math.random() * 1000000000) + 1);
 			document.querySelector('.chatapp-login-js').addEventListener('submit', function(e){
 				e.preventDefault();
@@ -115,8 +107,7 @@
 
 					//Message from server
 					socket.on('message', (message) => {
-                        const name = {username};
-                        console.log(message);
+						const name = {username};
 
 						outputMessage(message, name.username);
 
@@ -189,7 +180,7 @@
 						});
 					}
 					//Confirm Billing in ChatApp
-					function confirmShippingMethod(){
+					function confirmInShippingMethod(){
 						if(document.querySelector('.chatapp-confirm-shipping-js')) document.querySelector('.chatapp-confirm-shipping-js').addEventListener('click', function(e){
 							e.preventDefault();     
 							let typeShippingMethod = document.getElementById("type-shipping-js");
@@ -259,20 +250,7 @@
 							socket.emit('chatMessage', content);
 						});
 					}
-                    function saveCartChatApp(){
-                        if(document.querySelector('.chatapp-save-js')) document.querySelector('.chatapp-save-js').addEventListener('click', function(e){
-                            e.preventDefault();
-                            let contentSaveCart = '<div class="chatapp__order__head save-cart">'
-                                                        + '<h4 class="order__heading order__heading--confirm">Save Cart Successfully</h4>'
-                                                    + '</div>'
-                                                    + '<div class="chatapp__order__body chatapp__order__body--coupon">'
-                                                        + "<div class='chatapp__order__coupon text-center'>You don't have to start over. We'll save your cart and email you a link to it.</div>"
-                                                    + '</div>';
-                            socket.emit('chatMessage', contentSaveCart);
-                            this.parentElement.parentElement.remove();
-                        });
-                    }
-                    //Output message to DOM
+					//Output message to DOM
 					function outputMessage(message, name){    
 						let isSentByCurrentUser = false;
 
@@ -371,10 +349,6 @@
 															+ '</div>'
 														+ '</div>'
 													+'</div>';
-								}else if(message.text.includes('waiting-customer')){
-									div.innerHTML = `<p class="text-center chatapp__text chatapp-service">${message.text}</p>`;
-								}else if(message.text.includes('please-oops')){
-									div.innerHTML = `<p class="text-center chatapp__text chatapp-oops">${message.text}</p>`;
 								}else if(message.text.includes('chat-now')){
 									if(document.querySelector('.chatapp-service')) document.querySelector('.chatapp-service').parentElement.remove();
                 					if(document.querySelector('.chatapp-oops')) document.querySelector('.chatapp-oops').parentElement.remove();
@@ -384,14 +358,12 @@
 									setTimeout(function(){
 										if(document.querySelector('.chatapp-sales')) document.querySelector('.chatapp-sales').parentElement.remove();
 									}, 2000)
-                                }else if(message.text.includes('upload-file')){
+								}else if(message.text.includes('upload-file')){
                                     div.innerHTML = `<div class="chatapp__box chatapp__box--customer"><span>${message.text}</span></div>`;
                                 }else if(message.text.includes('payment-success')){
                                     div.innerHTML = `<div class="chatapp__box chatapp__box--customer chatapp__order">${message.text}</div>`;
-                                    document.querySelector('.chatapp-select-hidden-js').remove();
                                 }else if(message.text.includes('payment-pending')){
                                     div.innerHTML = `<div class="chatapp__box chatapp__box--customer chatapp__order">${message.text}</div>`;
-                                    document.querySelector('.chatapp-select-hidden-js').remove();
                                 }else if(message.text.includes('payment-unsuccess')){
                                     div.innerHTML = '<div class="chatapp__box chatapp__box--customer chatapp__order">'
                                                     + message.text
@@ -445,7 +417,6 @@
                                                         + '</div>'
                                                     + '</div>'
                                                 +'</div>';
-                                    document.querySelector('.chatapp-select-hidden-js').remove();
                                 }else if(message.text.includes('save-cart')){
                                     div.innerHTML = `<div class="chatapp__box chatapp__box--customer chatapp__order">${message.text}</div>`;
                                 }
@@ -540,10 +511,6 @@
 															+ '</div>'
 														+ '</div>'
 													+'</div>';
-								}else if(message.text.includes('waiting-customer')){
-									div.innerHTML = `<p class="text-center chatapp__text chatapp-service">${message.text}</p>`;
-								}else if(message.text.includes('please-oops')){
-									div.innerHTML = `<p class="text-center chatapp__text chatapp-oops">${message.text}</p>`;
 								}else if(message.text.includes('chat-now')){
 									if(document.querySelector('.chatapp-service')) document.querySelector('.chatapp-service').parentElement.remove();
                 					if(document.querySelector('.chatapp-oops')) document.querySelector('.chatapp-oops').parentElement.remove();
@@ -557,10 +524,8 @@
                                     div.innerHTML = `<div class="chatapp__box chatapp__box--system"><span>${message.text}</span></div>`;
                                 }else if(message.text.includes('payment-success')){
                                     div.innerHTML = `<div class="chatapp__box chatapp__box--system chatapp__order">${message.text}</div>`;
-                                    document.querySelector('.chatapp-select-hidden-js').remove();
                                 }else if(message.text.includes('payment-pending')){
                                     div.innerHTML = `<div class="chatapp__box chatapp__box--system chatapp__order">${message.text}</div>`;
-                                    document.querySelector('.chatapp-select-hidden-js').remove();
                                 }else if(message.text.includes('payment-unsuccess')){
                                     div.innerHTML = '<div class="chatapp__box chatapp__box--system chatapp__order">'
                                                     + message.text
@@ -614,7 +579,6 @@
                                                         + '</div>'
                                                     + '</div>'
                                                 +'</div>';
-                                    document.querySelector('.chatapp-select-hidden-js').remove();
                                 }else if(message.text.includes('save-cart')){
                                     div.innerHTML = `<div class="chatapp__box chatapp__box--system chatapp__order">${message.text}</div>`;
                                 }
@@ -627,11 +591,10 @@
 						confirmCartChatApp();
 						confirmInformation();
 						activeShippingMethod();
-						confirmShippingMethod();
+						confirmInShippingMethod();
 						applyCouponChatApp();
                         confirmOrderSummary();
                         toggleCartDetail();
-                        saveCartChatApp();
 					}
 				}
 			});
@@ -701,7 +664,8 @@
 					}
 				});
 			}
-            //Get file
+			
+			//Get file
             function getFile(){
                 let attach = document.getElementById('file');
                 let file = '';
@@ -710,8 +674,7 @@
                 }
                 let fileChat = '<a class="upload-file" href="'+file+'" download>'+file+'</a>';
                 socket.emit('chatMessage', fileChat);   
-            }
-            //Edit Cart Info
+            }//Edit Cart Info
 			function openEditConfirm(){
 				let popup;
 				let openWebConfirm = document.querySelectorAll('.chatapp-edit-js');
@@ -740,10 +703,9 @@
 					}
 				}
 			}
-            //Received Popup data
-            function receivedPopup(data){
+			function receivedPopup(data){
 				socket.emit('chatMessage', data);
-			}
+            }
             //Toggle Cart Detail
             function toggleCartDetail(){
                 let toggleEl = document.querySelectorAll('.toggle-chatapp-cart-js');
@@ -754,25 +716,6 @@
                     });
                 }
             }
-            //Close ChatApp
-            document.querySelector('.chatapp-session-js').addEventListener('click', function(){   
-                document.querySelector('.chatapp-logo').classList.remove('chatapp-hidden');
-                document.querySelector('.chatapp-form').parentElement.classList.add('panel__body--login');
-                document.querySelector('.chatapp-form').classList.remove('chatapp-hidden');    
-                document.querySelector('.panel').classList.remove('panel--system');
-                document.querySelector('.chatapp-system').classList.add('chatapp-visible');                    
-                document.querySelector('.chatapp-message-js').firstElementChild.setAttribute('readonly','readonly');
-                document.querySelector('.chatapp-message-js').firstElementChild.nextElementSibling.setAttribute('disabled','disabled');
-                document.querySelector('.file').setAttribute('disabled','disabled');
-                document.querySelector('.footer-active-js').firstElementChild.nextElementSibling.classList.remove('search-product-js');
-                document.querySelector('.chatapp-content-js').innerHTML = '';
-                document.querySelector('.panel').classList.remove('panel-active');
-                document.querySelector('.chatapp__icon').classList.remove('chatapp-hidden');
-                document.querySelector('.panel__title').innerText = "";
-                document.querySelector('.panel__name').innerText = "";
-                window.location = '';
-                localStorage.removeItem('email');
-            });
-        </script>
+		</script>
 	</body>
 </html>
