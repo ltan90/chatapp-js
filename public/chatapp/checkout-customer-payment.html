@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./../assets/images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"></noscript>
+    <link rel="stylesheet" href="./../assets/css/style.min.css" />
+</head>
+<body>
+    <main class="container container--popup container--popup-chatapp">
+        <div class="accordion accordion--checkout">
+            <div id="step4" class="card card--checkout active">
+                <div class="card__head card__head--chatapp">
+                    <h2 class="card__title d-flex align-items-center">
+                        Payment
+                    </h2>
+                </div>
+                <div class="collapse card__body card__body--chatapp card__body--mobile">
+                    <form action="" method="POST" class="frm frm--checkout submit-js" name="frm_step4" data-edit="step4">
+                        <div class="row row--fixed">
+                            <div class="col__6 col__sm__4 col--fixed d-flex">
+                                <div class="frm__pay__type frm__pay--type frm__pay--chatapp">
+                                    <h4 class="frm__pay__title">Credit Card</h4>
+                                    <p class="frm__pay__info">Visa, Mastercard etc.</p>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="alert alert--danger--chatapp alert--danger--checkout alert-chatapp-js" style="display: none;">
+                            Your payment could not be processed at this time. Please make sure the card information was entered correctly and resubmit. If the problem persists, please contact your credit card company to authorize the purchase.
+                        </div>
+                        <h4 class="card__body__title card__body--title">Add card Details</h4>
+                        <div class="col__12 col__lg__9 col__hd__7 col--fixed-padding fixed--mobile">
+                            <div class="row row--fixed">
+                                <div class="frm__group col__12 col--fixed frm__group--credit">
+                                    <span for="credit_number" class="fs-12 label_pay">Credit number</span>
+                                    <div class="frm__group__input">
+                                        <span class="input__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10">
+                                                <defs>
+                                                    <style>
+                                                        .a {
+                                                            fill: #013253;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <g transform="translate(-97.9 -342)">
+                                                    <path class="a" d="M16.25,7.75a1,1,0,0,0-1-1h-12a1,1,0,0,0-1,1v1.5h14Z" transform="translate(95.65 335.25)">
+                                                    </path>
+                                                    <path class="a" d="M2.25,20.75a1,1,0,0,0,1,1h12a1,1,0,0,0,1-1v-5h-14Zm4.438-1.5h5.125a.439.439,0,0,1,.438.438h0a.439.439,0,0,1-.437.438H6.688a.439.439,0,0,1-.437-.437h0A.439.439,0,0,1,6.688,19.25Zm-2.25,0h.375a.439.439,0,0,1,.438.438h0a.439.439,0,0,1-.437.438H4.438A.439.439,0,0,1,4,19.688H4A.439.439,0,0,1,4.438,19.25Z" transform="translate(95.65 330.25)"></path>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        <input id="credit_number" type="text" name="credit_number" class="remove-error-js frm__control" placeholder="1234 5678 9012 3456" maxlength="23" autocomplete="off"/>
+                                    </div>
+                                    <p class="credit_number frm__error">Invalid Credit Card Number</p>
+                                </div>
+                                <div class="frm__group col__8 col--fixed">
+                                    <span for="name_card" class="fs-12 label_pay">Name on Card</span>
+                                    <div class="frm__group__input">
+                                        <span class="input__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                                                <defs>
+                                                    <style>
+                                                        .a {
+                                                            fill: #013253;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <path class="a" d="M6,6.75A3.375,3.375,0,1,0,2.625,3.375,3.376,3.376,0,0,0,6,6.75ZM9,7.5H7.709a4.08,4.08,0,0,1-3.417,0H3a3,3,0,0,0-3,3v.375A1.125,1.125,0,0,0,1.125,12h9.75A1.125,1.125,0,0,0,12,10.875V10.5A3,3,0,0,0,9,7.5Z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                        <input type="text" name="name_card" class="remove-error-js frm__control" />
+                                    </div>
+                                    <p class="name_card frm__error">Invalid name card</p>
+                                </div>
+                                <div class="frm__group col__4 col--fixed frm__group--security">
+                                    <span for="security_cvv" class="fs-12 label__security">Security CVV</span>
+                                    <div class="frm__group__input">
+                                        <span class="input__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16.374" height="12" viewBox="0 0 16.374 12">
+                                                <defs>
+                                                    <style>
+                                                        .a {
+                                                            fill: #013253;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <path class="a" d="M5.731,6A3.146,3.146,0,0,0,9.006,3,3.146,3.146,0,0,0,5.731,0,3.146,3.146,0,0,0,2.456,3,3.146,3.146,0,0,0,5.731,6ZM8.187,7.5a1.384,1.384,0,0,1,.207-.715c-.123-.012-.243-.035-.371-.035H7.6a4.826,4.826,0,0,1-3.73,0H3.439A3.3,3.3,0,0,0,0,9.9v.976A1.18,1.18,0,0,0,1.228,12H8.415a1.4,1.4,0,0,1-.228-.75Zm7.368-.75h-.819V4.875A1.967,1.967,0,0,0,12.69,3a1.967,1.967,0,0,0-2.047,1.875V6.75H9.825a.787.787,0,0,0-.819.75v3.75a.787.787,0,0,0,.819.75h5.731a.787.787,0,0,0,.819-.75V7.5A.787.787,0,0,0,15.555,6.75ZM12.69,10.125a.753.753,0,1,1,.819-.75A.787.787,0,0,1,12.69,10.125Zm.819-3.375H11.871V4.875a.822.822,0,0,1,1.637,0Z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                        <input type="text" name="security_cvv" class="remove-error-js frm__control" placeholder="123" maxlength="4" autocomplete="off"/>
+                                    </div>
+                                    <p class="security_cvv frm__error">Invalid CVV</p>
+                                </div>
+                                <div class="frm__group col__12 col--fixed">
+                                    <span for="expiration" class="label__expiration fs-14">Expiration:</span>
+                                    <div class="row row--fixed">
+                                        <div class="col__30 mb-2 col--fixed">
+                                            <select name="expiration_month" id="month" class="remove-change-js frm__group__date"></select>
+                                        </div>
+                                        <div class="col__30 mb-2 col--fixed">
+                                            <select name="expiration_years" id="year" class="remove-change-js frm__group__date"></select>
+                                        </div>
+                                    </div>
+                                    <p class="expiration_month frm__error">Invalid Expiry Date</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm__group frm__group--policy">
+                            <label class="frm__checkbox frm__checkbox--policy">
+                                Please accept the <a href="#" class="frm__checkbox__link modal-js" data-modal="modal-term">Terms and Conditions</a> to place the order
+                                <input type="checkbox" name="terms-conditions" class="remove-change-js frm__checkbox__control"/>
+                                <span class="frm__checkbox__checkmark frm__checkbox__checkmark--checkout frm__checkbox__checkmark--policy"></span>
+                            </label>
+                            <p class="frm__error">This is a required field.</p>
+                        </div>
+                        <button type="submit" class="btn btn--checkout">Place Order ($<span id="total-place-js"></span>)</button>                                
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="modal-term" class="stop-body-js modal modal--term">
+            <div class="modal__content">
+                <div class="modal__header">
+                    <h2 class="modal__header__title"></h2>
+                    <span class="icon__close close-modal-js"></span>
+                </div>
+                <div class="modal__body overscroll">
+                    Welcome to drberg.com. By using this website, you agree to comply with the terms and conditions of drberg.com. These terms and conditions can change without notice by posting them to this website. If you do not agree then go elsewhere.
+                    <br><br>
+                    Disclaimer of Warranty<br>
+                    All content, materials, products, services and information on this website are given on an "as is" and "as available" basis, without warranties of any kind, either said or implied. Neither drberg.com nor its affiliates, nor the directors, officers, employees, agents, contractors, successors or assigns of each, shall be liable for any damages whatsoever arising out of or related to the use of, or inability to use, this website's information or any other website linked to this website. This waiver of liability applies to direct, indirect, incidental, consequential, special, punitive, exemplary or other damages you or others may suffer, as well as damages for lost profits, business interruption or the loss of data or information, even if drberg.com is notified in advance of the potential for any such damages and regardless of the form of action, whether in contract, tort, warranty, strict liability or otherwise.
+                    <br><br>
+                    Trademarks and Copyrights<br>
+                    You agree that all content appearing on the website including, but not limited to, code, trademarks, service marks, trade names, graphics, images, text, audio sections, icons, digital downloads, data compilations and computer software, are the sole property of drberg.com or its partners and suppliers, and are protected by United States and international copyright laws. All content on this website is the exclusive property of drberg.com and protected by United States and international copyright laws. All software used on this site is the property of drberg.com and protected by United States and international copyright laws. Users are granted permission to browse and use the drberg.com website for information only. Any other use, including and not limited to the reproduction, duplication, modification, distribution, sale, transmission, republication, removal, deletion, addition, framing, display, or performance of the content on this website or the exploitation in any other manner of any content of this website, in part or in whole, is strictly prohibited. Except as expressly authorized in writing, the use or misuse of any trademarks, service marks, trade names, logos, text, images, graphics, intellectual property or content from this website is strictly prohibited.
+                    Drberg.com does not grant, by implication or otherwise, any license or right to use any trademark, service mark, trade name or logo, or the content displayed on this site without the prior written consent of Dr. Berg personally. Registered and unregistered proprietary information is owned and held by drberg.com and therefore, you may be liable for infringement or misappropriation or other legal action if you misuse this website in any form either mentioned or unmentioned.
+                    <br><br>
+                    Third Party Websites<br>
+                    Any 3rd party websites are independent from drberg.com, and drberg.com has no control over, or responsibility with respect to, the information provided or activities undertaken by any such website. A link between drberg.com and another website further does not mean that drberg.com endorses that website. Linking to off-site pages is done at your own risk, requiring you to make your own independent decisions. Drberg.com expressly disclaims any responsibility or liability for any damage, loss, or injury arising out of the factors from 3rd party websites
+                    <br><br>
+                    User Restrictions<br>
+                    This website is for your personal, non-commercial only. You agree that you will not use this website for any purpose including, but not limited to, advertising, or selling products; to monitor, gather or copy content on this website by using any robot, "bot", spider, crawler, spyware, engine, device, software, extraction tool, or any other automatic device, utility, or manual process of any kind; to frame or utilize framing techniques to enclose any trademark or other proprietary information including, but not limited to, any images, text, or page layout; use any meta tags or any other "hidden text" utilizing Dr. Berg's name or any trademarks. You may not modify, reproduce, duplicate, copy, distribute, sell, resell, publish, license, visit or otherwise exploit this website.
+                    <br><br>
+                    Unlawful Conduct<br>
+                    You agree that you are prohibited from posting or transmitting to the drberg.com website any libelous, defamatory, obscene, inflammatory, pornographic or profane way. Drberg.com reserves the right to seek all remedies for violations of these terms and conditions.
+                    <br><br>
+                    Product Descriptions<br>
+                    Drberg.com attempts to be as accurate as possible. However, drberg.com does not claim that any content of this website is accurate, complete, reliable, current or error free.
+                    <br><br>
+                    Revisions<br>
+                    Drberg.com may, at its sole discretion, and with or without notice to you, make changes to, or discontinue, any aspect of this website including, without limitation, any content, products, services or prices offered through this website.
+                    <br><br>
+                    Consent<br>
+                    By accessing, browsing and/or using this website, you acknowledge that you have read, understood and agree to be bound by these terms and conditions.
+                    <br><br>
+                    Indemnity<br>
+                    You agree to hold harmless drberg.com, its affiliates, officers, employees, agents, licensors and licensees from any damages, liabilities, costs and expenses, including reasonable attorneys' fees, on account of any claim, suit, action, demand or proceeding made or brought against any such party, or on account of the investigation, defense or settlement thereof, arising with your use of this website.
+                    <br><br>
+                    Enforceability and Governing Law<br>
+                    Your use of drberg.com is governed with the laws of the state of Virginia, without regard to its law provisions. Any action against drberg.com arising from the use of the website and the provisions of these terms and conditions must be brought by you exclusively in the state or federal courts located in Virginia.
+                    <br><br>
+                    Your Representations<br>
+                    You state that you are 18 years of age or older.
+                    <br><br>
+                    Return/Refund Policy<br>
+                    Click here for our Shipping and Refund Policy
+                    <br><br>
+                    Customer Service<br>
+                    If you have any questions, please call us at 703-354-7336. We are open from 9:00am to 5:00pm Monday through Friday (EST).
+                    <br><br>
+                    *Disclaimer:<br>
+                    The dietary products may not have undergone evaluation and/or testing by the United States Food and Drug Administration. The recommendation of this program is not designed to treat, prevent or cure medical diseases. Before undertaking any recommendations or changes in diet or exercise within consult with your physician.
+                    Dr. Eric Berg DC is not a medical doctor - he is a Chiropractor. We do not diagnose or treat medical ailments or diseases. This program is designed for educational benefits only. Any Testimonials referred to in this Web site were volunteered by the makers without an offer of compensation. The results referred to in Testimonials may not be typical and others results may vary.
+                </div>
+                <div class="modal__footer">
+                    <button class="btn btn--add close-modal-js">Close</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/cart.js"></script>
+    <script>
+        let shippingMethod = localStorage.getItem('shipping-method');        
+        shippingMethod = shippingMethod == null || shippingMethod == '' ? 0 : parseFloat(shippingMethod.split(",")[2]);
+        document.getElementById('total-place-js').innerText = shoppingCart.subTotalCart() + shippingMethod;
+        //Month and Years
+        function renderCalendar(start, end, id){
+            let html = '<option value="">'+id.charAt(0).toUpperCase() + id.slice(1)+'</option>';
+            for (let i = start; i <= end; i++){
+                html += '<option value="'+i+'">'+i+'</option>';
+            }
+            return document.getElementById(id).innerHTML = html;
+        }
+        renderCalendar(1,12,'month');
+        renderCalendar(2020,2050,'year');
+        /*Open modal*/
+        let showModal = document.querySelectorAll('.modal-js');
+        for(let i = 0; i < showModal.length; i++){
+            showModal[i].addEventListener('click', function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                let modal = this.getAttribute('data-modal');
+                document.body.classList.add('overlay');
+                document.getElementById(modal).classList.add('modal--show');
+            });
+        }
+        /*Close modal*/
+        let closeModal = document.querySelectorAll('.close-modal-js');
+        for(let i = 0; i < closeModal.length; i++){
+            closeModal[i].addEventListener('click', function(){
+                this.parentElement.parentElement.parentElement.classList.remove('modal--show');
+                document.body.classList.remove('overlay');
+            })
+        }  
+        /*Input change*/
+        document.getElementById('credit_number').addEventListener('input', function (e) {
+            e.target.value = e.target.value.replace(/[^\dA-Z]/g, '').replace(/(.{4})/g, '$1 ').trim();
+        });
+        let removeErrors = document.querySelectorAll('.remove-error-js');
+        for(let i = 0; i < removeErrors.length; i++){
+            removeErrors[i].addEventListener('keyup', function(){
+                if(this.value === ''){
+                    this.parentElement.nextElementSibling.classList.add('frm__error--block');
+                }else{
+                    this.parentElement.nextElementSibling.classList.remove('frm__error--block');
+                }
+            });
+        }
+        let removeChangeErrors = document.querySelectorAll('.remove-change-js');
+        for(let i = 0; i < removeChangeErrors.length; i++){
+            removeChangeErrors[i].addEventListener('change', function(){
+                if(this.value === ''){
+                    this.parentElement.parentElement.nextElementSibling.classList.add('frm__error--block');
+                }else if(this.checked){
+                    this.parentElement.nextElementSibling.classList.remove('frm__error--block');
+                }else{
+                    this.parentElement.parentElement.nextElementSibling.classList.remove('frm__error--block');
+                }
+            });
+        }    
+        //Validate Payment
+        function validatePayment(form){
+            let fields = ["credit_number", "name_card", "security_cvv", "expiration_month"];
+            fields.forEach((element) => {
+                if(form[element].value === ''){
+                    document.querySelector('.' + element).classList.add('frm__error--block');
+                    return false;
+                }
+            });
+            let creditNumber = form['credit_number'];
+            if(creditNumber.value === ''){
+                creditNumber.parentElement.nextElementSibling.classList.add('frm__error--block');
+                creditNumber.focus();
+                return false;
+            }
+            if(parseInt(creditNumber.value.length) < 19){
+                creditNumber.parentElement.nextElementSibling.classList.add('frm__error--block');
+                creditNumber.focus();
+                return false;
+            }
+            let nameCard = form['name_card'];
+            if(nameCard.value === ''){
+                nameCard.parentElement.nextElementSibling.classList.add('frm__error--block');
+                nameCard.focus();
+                return false;
+            }
+            let securityCVV = form['security_cvv'];
+            if(securityCVV.value === ''){
+                securityCVV.parentElement.nextElementSibling.classList.add('frm__error--block');
+                securityCVV.focus();
+                return false;
+            }
+            let month = form['expiration_month'];
+            if(month.value === ''){                              
+                month.parentElement.parentElement.nextElementSibling.classList.add('frm__error--block');
+                return false;
+            }
+            let year = form['expiration_years'];
+            if(year.value === ''){                              
+                year.parentElement.parentElement.nextElementSibling.classList.add('frm__error--block');
+                return false;
+            }
+            let chkTerm = form['terms-conditions'];
+            if(!chkTerm.checked){
+                chkTerm.parentElement.nextElementSibling.classList.add('frm__error--block');
+                chkTerm.focus();
+                return false;
+            }
+            return true;
+        } 
+        document.querySelector('.submit-js').addEventListener("submit", function (e) {
+            e.preventDefault();
+            if(validatePayment(this)){
+                let creditNumber, nameCard, securityCvv, expiration, statusSuccess, monthExpiration, result;
+                creditNumber = this['credit_number'].value.replace(/[^\dA-Z]/g, '').replace(/(.{4})/g, '$1');
+                nameCard = this['name_card'].value.toUpperCase();
+                securityCvv = this['security_cvv'].value;
+                monthExpiration = this['expiration_month'].value.length == 2 ? '' : '0';
+                expiration = monthExpiration + this['expiration_month'].value + '/' + this['expiration_years'].value;
+                result = bankVisa.find(bank => bank.number == creditNumber && bank.name == nameCard && bank.security == securityCvv && bank.expiration == expiration);
+                if(result == undefined){
+                    document.querySelector('.alert-chatapp-js').style.display = 'block';
+                }else{
+                    if (window.opener != null && !window.opener.closed) {
+                        let messages = window.opener.document.getElementById('messages');
+                        switch(result.status){
+                            case "00": //Payment Success
+                                window.opener.alertPaymentSuccess();
+                                break;
+                            case "01": //Payment pending
+                                window.opener.alertPaymentPending();
+                                break;
+                            case "02": //Payment danger
+                                window.opener.reselectPaymentMethodChatApp();
+                                break;
+                        }
+                        window.opener.document.querySelector('.chatapp-select-hidden-js').style.display = 'none';
+                        messages.scrollTop = messages.scrollHeight;
+                    }
+                    window.close();
+                }
+            }
+        });
+    </script>
+</body>
+</html>

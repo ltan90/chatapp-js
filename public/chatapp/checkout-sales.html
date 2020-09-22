@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./../assets/images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"></noscript>
+    <link rel="stylesheet" href="./../assets/css/style.min.css" />
+</head>
+<body>
+    <header class="header header--checkout header--chatapp text-center">
+        <a href="#" class="header__link">
+            <svg class="logo-image" xmlns="http://www.w3.org/2000/svg" width="300" height="64.658" viewBox="0 0 300 64.658"><defs><style>.a-logo{fill:#0091a8;font-size:8px;transform: translate(54.383px, 8px);}.a-logo,.d-logo{font-family:Roboto-Regular, Roboto;}.b-logo,.c-logo{fill:none;}.b-logo{stroke:#14adbd;stroke-linecap:round;stroke-width:2px;}.b-logo-line{transform: translate(0.49px, 5.44px);}.c-logo{stroke:#013253;stroke-miterlimit:10;stroke-dasharray:2 2;opacity:0.31;}.d-logo,.f-logo{fill:#013253;}.d-logo{font-size:10px;}.e-logo{font-family:Roboto-Bold, Roboto;}.g-logo{fill:#fff;}.h-logo,.i-logo{fill:#0c3353;}.h-logo{opacity:0;}</style></defs><g transform="translate(-644.739 -38)"><line class="c-logo" y2="50.482" transform="translate(830.594 45.5)"></line><g transform="translate(841.739 64.629)"><text class="d-logo" transform="translate(0 10)"><tspan x="0" y="0">THE KNOWLEDGE DOC</tspan></text><text class="d-logo" transform="translate(0 10)"><tspan x="0" y="0">THE </tspan><tspan class="e-logo" y="0">KNOWLEDGE</tspan><tspan y="0" xml:space="preserve"> DOC</tspan></text></g><g transform="translate(711.033 55.634)"><path class="f-logo" d="M182.42,243.92q.68.045,1.475.069t2.387.023q.881,0,2.858-.047t3.09-.045q5.762,0,9.022,3.03t3.259,8.4q0,5.426-3.09,8.365t-8.806,2.937q-.957,0-2.965-.062t-3.043-.062q-1.1,0-2.132.032t-2.055.092v-1.236a3.351,3.351,0,0,0,2.17-.457,3.433,3.433,0,0,0,.455-2.2v-14.92a3.356,3.356,0,0,0-.455-2.2,3.592,3.592,0,0,0-2.17-.464Zm6.643,1.252v20.207h2.224a17.483,17.483,0,0,0,3.144-.216,5.84,5.84,0,0,0,1.939-.727,6.523,6.523,0,0,0,2.759-3.386,15.955,15.955,0,0,0,.918-5.829q0-5.38-2.093-7.715t-7.053-2.334Z" transform="translate(-182.42 -243.92)"></path><path class="f-logo" d="M241.314,264.731c0-.8-.134-1.31-.4-1.515a4.5,4.5,0,0,0-2.162-.325v-1.114q1.514-.047,3-.161t2.92-.318v4.066a8.086,8.086,0,0,1,1.846-3.007A3.4,3.4,0,0,1,248.9,261.3a2.782,2.782,0,0,1,2.009.71,2.5,2.5,0,0,1,.741,1.888,2.038,2.038,0,0,1-.447,1.382,1.494,1.494,0,0,1-1.19.519,1.67,1.67,0,0,1-1.274-.464,1.9,1.9,0,0,1-.441-1.361,2.954,2.954,0,0,1,.1-.766,4.3,4.3,0,0,1,.286-.765h-.031q-1.515,0-2.657,2.064a10.117,10.117,0,0,0-1.143,4.971v4.113q0,1.377.518,1.739a7.039,7.039,0,0,0,2.927.426v1.066q-1.9-.078-3.144-.116t-2.139-.038q-.418,0-1.236.031t-3,.124v-1.066a5.012,5.012,0,0,0,2.162-.465q.371-.31.371-1.7Z" transform="translate(-215.397 -254.094)"></path><path class="f-logo" d="M269.332,288.9a1.812,1.812,0,0,1,1.4.578,2.189,2.189,0,0,1,.533,1.54,2.242,2.242,0,0,1-.533,1.553,1.79,1.79,0,0,1-1.4.6,1.838,1.838,0,0,1-1.414-.6,2.2,2.2,0,0,1-.548-1.553,2.138,2.138,0,0,1,.556-1.523A1.836,1.836,0,0,1,269.332,288.9Z" transform="translate(-232.152 -270.251)"></path><path class="f-logo" d="M285.206,243.92q.988.045,1.961.069t1.931.023q1.839,0,3.777-.047t2.047-.045q4.016,0,5.932,1.369a4.842,4.842,0,0,1,1.916,4.228,5.052,5.052,0,0,1-1.5,3.858,6.81,6.81,0,0,1-4.325,1.616v.093a8.4,8.4,0,0,1,5.044,1.669,5.1,5.1,0,0,1,1.722,4.1,4.9,4.9,0,0,1-2.108,4.407q-2.109,1.391-6.743,1.391-1.159,0-2.973-.046t-2.465-.046q-.942,0-2.008.022t-2.194.07l-.015-1.236a3.354,3.354,0,0,0,2.171-.457,3.435,3.435,0,0,0,.456-2.2v-15.23c0-1.06-.16-1.711-.479-1.948a4.355,4.355,0,0,0-2.148-.4Zm6.611,1.3v9.168h2.348a4.936,4.936,0,0,0,3.569-1.074,6.383,6.383,0,0,0,.023-7.074q-1.058-1.02-3.947-1.019Zm0,10.436v9.693h2.1q3.073,0,4.3-1.073a4.681,4.681,0,0,0,1.228-3.673,4.882,4.882,0,0,0-1.282-3.8q-1.282-1.144-4.325-1.143Z" transform="translate(-242.593 -243.92)"></path><path class="f-logo" d="M338.352,268.72a8.4,8.4,0,0,0,1.267,4.978,4.228,4.228,0,0,0,3.63,1.7,5.055,5.055,0,0,0,2.913-.835,5.133,5.133,0,0,0,1.861-2.427l.9.279a6.237,6.237,0,0,1-2.425,3.5,7.729,7.729,0,0,1-4.449,1.182,7.257,7.257,0,0,1-5.5-2.078,9.188,9.188,0,0,1,.085-11.534,7.2,7.2,0,0,1,5.477-2.188,6.616,6.616,0,0,1,4.99,1.886,7.138,7.138,0,0,1,1.823,5.179v.231Zm-.015-1.083,7.353-.185a6.513,6.513,0,0,0-.9-3.75,3,3,0,0,0-2.618-1.291,3.213,3.213,0,0,0-2.712,1.391A6.791,6.791,0,0,0,338.337,267.637Z" transform="translate(-271.481 -254.094)"></path><path class="f-logo" d="M373.521,264.731c0-.8-.133-1.31-.4-1.515a4.5,4.5,0,0,0-2.163-.325v-1.114q1.514-.047,3-.161t2.92-.318v4.066a8.081,8.081,0,0,1,1.846-3.007,3.4,3.4,0,0,1,2.386-1.059,2.782,2.782,0,0,1,2.009.71,2.5,2.5,0,0,1,.741,1.888,2.038,2.038,0,0,1-.447,1.382,1.494,1.494,0,0,1-1.19.519,1.675,1.675,0,0,1-1.275-.464,1.9,1.9,0,0,1-.441-1.361,2.989,2.989,0,0,1,.1-.766,4.4,4.4,0,0,1,.286-.765h-.032q-1.514,0-2.657,2.064a10.116,10.116,0,0,0-1.143,4.971v4.113q0,1.377.517,1.739a7.046,7.046,0,0,0,2.927.426v1.066q-1.9-.078-3.143-.116t-2.139-.038q-.417,0-1.236.031t-3,.124v-1.066a5.008,5.008,0,0,0,2.162-.465q.372-.31.371-1.7Z" transform="translate(-292.794 -254.094)"></path><path class="f-logo" d="M414.294,262.418a5.882,5.882,0,0,1,1.5-1.361,3.235,3.235,0,0,1,1.575-.356,2.008,2.008,0,0,1,1.105.223.915.915,0,0,1,.316.8,1.077,1.077,0,0,1-.271.8,1.054,1.054,0,0,1-.78.27,2.416,2.416,0,0,1-.973-.231,2.44,2.44,0,0,0-.665-.232,1.083,1.083,0,0,0-.587.2,1.709,1.709,0,0,0-.525.557,4.511,4.511,0,0,1,.818,1.43,5.182,5.182,0,0,1,.263,1.693,4.831,4.831,0,0,1-1.575,3.866,6.657,6.657,0,0,1-4.481,1.361c-.082,0-.294-.005-.633-.015s-.633-.016-.881-.016a2.559,2.559,0,0,0-1.376.3,1.009,1.009,0,0,0-.463.9q0,1.517,4.82,1.7l.881.046a9.977,9.977,0,0,1,4.749,1.036,3.106,3.106,0,0,1,1.444,2.828,4.543,4.543,0,0,1-2.363,3.9,11.03,11.03,0,0,1-6.118,1.539,9.749,9.749,0,0,1-4.812-1.034,3.076,3.076,0,0,1-1.83-2.707,2.972,2.972,0,0,1,.719-1.979,4.584,4.584,0,0,1,2.077-1.314,3.031,3.031,0,0,1-1.405-1.066,2.972,2.972,0,0,1,.231-3.5,4.269,4.269,0,0,1,1.993-1.227,4.43,4.43,0,0,1-2.4-1.6,4.537,4.537,0,0,1-.857-2.791,5.026,5.026,0,0,1,1.692-3.927,6.358,6.358,0,0,1,4.41-1.516,8.115,8.115,0,0,1,2.51.364A5.172,5.172,0,0,1,414.294,262.418Zm-7.246,14.811a2.863,2.863,0,0,0-1.313.944,2.28,2.28,0,0,0-.464,1.406,2.431,2.431,0,0,0,1.3,2.188,7.115,7.115,0,0,0,3.645.781,8.363,8.363,0,0,0,4.086-.873,2.556,2.556,0,0,0,1.569-2.221q0-1.653-4.588-1.9Q408.686,277.414,407.048,277.229Zm2.874-15.167a2.5,2.5,0,0,0-2.186,1.013,5.333,5.333,0,0,0-.718,3.068,5.537,5.537,0,0,0,.711,3.138,2.486,2.486,0,0,0,2.193,1.022,2.541,2.541,0,0,0,2.217-1.029,6.877,6.877,0,0,0,0-6.184A2.543,2.543,0,0,0,409.922,262.062Z" transform="translate(-311.807 -253.744)"></path></g><g transform="translate(644.739 38)"><path class="g-logo" d="M894.251,167.7l3.641-1.734,4.571-2.177,4.734-4.293,2.7-3.482,1.981-1.908-.242-5.1-1.875-4.579-2.182-3.768L906.02,134.3l-1.036-4.617s-2.448-6.813,1.331-10.108,8.369-6.4,15.856-4.535,7.2,2.91,7.2,2.91l3.623,1.765,2.077,3.053v4.2l-.387,3.62.333,3.376-.574,2.4.628.45.464,2.126s-.754,2.194-.8,2.385-1.111,2.2-1.111,2.2l-.773,1.327-1.366,4.567-.8,1.92.939,3.379s1.579,1.624,1.886,1.966a30.4,30.4,0,0,1,1.277,3.909l2.512,2v3.1l.628,5.533-.676,4.15H935.89L932.7,171.8l-4.251-1.1-3,1.24-3.623,6.106-1.014-.334-.325-2.766-2.235-1.812a16.328,16.328,0,0,0-2.174-.208c-.338.064-4.251-.794-4.444-.6s-4.154,2.385-4.4,2.48-1.884.763-1.884.763a11.466,11.466,0,0,1-.628-1.479c0-.191-.29-3.2-.29-3.2s-.048-1.193-.048-1.336-.1-1.443-.1-1.443l-.956-1.194.763-1.037-.242-.906-.676-.334Z" transform="translate(-892.956 -114.344)"></path><path class="h-logo" d="M938.108,168.709c1.345.231,3.756-8.451,5.592-12.927-1.2-2.094-.733-3.587-1.472-4.188a1.443,1.443,0,0,1-.011-2.326c.789-.55.886-2.039,1.5-3.834-.454-.187-1.308.008-1.426-.415-.682-2.451.556-7.344.232-9.415a.638.638,0,0,0,.074-.973,13.844,13.844,0,0,1-1.886-1.6c-.551-.619,2.04-1.341,2.147-2.123.025-.182-2.552-.4-2.517-.582,3.24-.662-.252-.628,0-.662,2.929-.382,1.591-1.474,1.759-2.43.095-.54-.831-.886.9-1.636.436-.189-.7-.617-1.05-.929l0,0a1.546,1.546,0,0,0-.13-.1.569.569,0,0,0-.239-.1c6.851-6.513-8.507-3.684-8.7-3.651.141-.069,2.222-1.878.846-1.426a9.035,9.035,0,0,0-1.821.819c-7.156,4.264-3.766,17.067-1.439,26.579,1.645,1.544,4,7.164,5.508,10.7.232.543-.95-.009-2.186.74-1.271.77-2.075,1.07-3.625,4.221a32.336,32.336,0,0,0-2.716,16.343c.083,1.172,7.094-5.979,16.251-.844C945.036,178.7,937.968,168.685,938.108,168.709Z" transform="translate(-915.319 -117.616)"></path><g transform="translate(0 0)"><path class="i-logo" d="M968.687,218.593c-1.385-.029-2.948.059-3.655-.029a7.539,7.539,0,0,1-1.651-.442c-.5-.148.5.973.914,1.3a3.42,3.42,0,0,0,2.594.943c1.68,0,2.3-.088,3.331-1.032C971.251,218.416,970.073,218.622,968.687,218.593Z" transform="translate(-939.574 -184.799)"></path><path class="i-logo" d="M944.934,173c-.914,0-.767.295-.767.295a12.031,12.031,0,0,0,5.011-.442c2.182-.825,1.828-3.066,2-3.655.177-.56-.118-1.385-.855-1.149s-1.12-.177-3.891-.177a5.263,5.263,0,0,0-4.068,1.651,1.177,1.177,0,0,0-.177,1.238c.088.265-.207,1-.059.973.412-.118,1.709-1.916,3.8-2.152a4.906,4.906,0,0,1,2.83.206,8.2,8.2,0,0,0-3.184.472,5.41,5.41,0,0,0-2.948,2.653c-.059.265.295.354.649.295.353-.089.766-.855.884-.855a6.818,6.818,0,0,0,1.68-.177,15.877,15.877,0,0,1,3.331-.148s-.737.177-1.444.413A11.228,11.228,0,0,1,944.934,173Z" transform="translate(-925.281 -150.658)"></path><path class="i-logo" d="M981.273,168.094a7.482,7.482,0,0,1,3.007-.236c.236.03.59.088.973.118h.029c1,.118,2,1.12,2.358,1.091.354-.059.177-.531.177-.531a3.448,3.448,0,0,0-.914-1.592,3.337,3.337,0,0,0-1.857-.383c-.265,0-.5.029-.766.029a4.5,4.5,0,0,1-.914-.029,7.649,7.649,0,0,0-2.653-.059c-1.621.265-1.061,2.8-1.061,2.8a1.03,1.03,0,0,0,.707,1.238c.59.177-.058.766.59,1.3.678.56,4.628.265,4.628.265a4.036,4.036,0,0,0-.825-.678,9.32,9.32,0,0,0-2.093-.236,9.257,9.257,0,0,1-1.5-.354,2.9,2.9,0,0,1,.767-.03,6.656,6.656,0,0,0,2.535-.089,1.228,1.228,0,0,0,.648-.678,5.234,5.234,0,0,1,1.032.619,3.292,3.292,0,0,0,1.474.707c.177-.059-.118-.619-.825-1.238a6.161,6.161,0,0,0-2.977-1.739,9.52,9.52,0,0,0-3.242.619A1.158,1.158,0,0,1,981.273,168.094Z" transform="translate(-950.597 -149.663)"></path><path class="i-logo" d="M945.3,200.742c-1.07-1.89-3.738-1.916-5.565-2.725a39.725,39.725,0,0,1-6.65-3.156c-1.682-1.028-1.011-3.879-2.954-4.468.749,2.331,1.054,4.762,1.712,7.118,1.075.24.668-2.118,1.306-1.538a3.857,3.857,0,0,1,1.019,2.044c.49,2.451,1.443,16.771-1.869,8.973-2.185-5.038-7.911-7.895-10.763-1.639-.628,1.876-.945,2.232-2.339,5.745,1.655-6.6,2.44-10.2,5.954-10.618,5.746-1.71,3.565-6.461,3.836-11.264l-.741-4.579.059-.145a24.792,24.792,0,0,0,2.063-5.306l.206-.754c.56.29.678.145.884-.087a14.121,14.121,0,0,1,.707-1.942,7.908,7.908,0,0,0,.914-3.421c0-.667,0-1.044.03-1.827.029-.609-.147-1.246-1-1.044l.088-.7c.066-.669.141-1.385.189-2.094a8.229,8.229,0,0,1-2.964-2.553c.386,1.37,1.606,3.6,1.507,3.893-.354.812.148,1.217-.177,2.029-.118.232.03.522.354.406.383-.029,1.12.029,1.091.609,0,.493.265.841.294,1.3a2.646,2.646,0,0,1-.029.464c-.148-.493-.914-1.623-1.179-1.392a13.109,13.109,0,0,0,.03,1.826,6.48,6.48,0,0,1-1.592,4.349,16.562,16.562,0,0,1-1.8,5.812,4.41,4.41,0,0,1-1.063,1.387,2.521,2.521,0,0,1-1.71.493c-.177.029-2.527,3.023-5.4,1.994-1.229-.439-1.291.191-3.06.278-2.093.087-3.757-2.021-4.2-3.731-.383-1.566-1.1-1.623-1.839-2.667-.707-1.044.678-2.667.678-2.667a2.426,2.426,0,0,0,.118,1.3c.295.609,1.031.493,1.385.464a2.1,2.1,0,0,1,.943.174,13.772,13.772,0,0,0,2.152.058c.088-.029.118-.348.531-.522.118-.029.236-.058.413-.116a24.141,24.141,0,0,1,4.569-.2.309.309,0,0,1,.265.29,1.189,1.189,0,0,1,.118.29c.177.029.766,0,1,0,.265,0,.236-.261.413-.29a.867.867,0,0,1,.648.29.633.633,0,0,0,.148.116,3.636,3.636,0,0,1,.943,1.508c.412,1.246.412,1.942.589,1.8a7.843,7.843,0,0,0,.118-3.189c-.236-1.246-.442-1.073-.943-2.174-.177-.406.324-.551.56-.464.206.058.8.435,1.209.087a1.823,1.823,0,0,0-.265-2.754,7.985,7.985,0,0,0-3.331-1.507c-.413-.145-1.385-.7-1.651-.812-.265-.087-.177.087-.177.087a2.192,2.192,0,0,1,.236.58,2.887,2.887,0,0,1,.088.754v.029a1.5,1.5,0,0,0,.059.522c.089.029.472-.348.884.029.914.812.855,2.087.855,3.218.03.638-.118.754-1.15.783-.914.029-.649-.116-.8-.261s-.855-.087-1.238-.087-.471-.087-.471-.406c-.03-.29-.329-.478-.329-1.029a6.794,6.794,0,0,1,.152-1.232,7.95,7.95,0,0,0,.8-.116,1.45,1.45,0,0,0,.855-.406c.147-.145-.265-.551-1.268-.377-.619.087-.834.569-1.1.714a1.159,1.159,0,0,1-1.569,0,2.194,2.194,0,0,0-1.569-.514c-.532,0-.85.526-1.046.257a2.306,2.306,0,0,1,.271-2.573,5.867,5.867,0,0,0-2.653,1.131,6.352,6.352,0,0,1-5.535,1.3c-.884-1.449-.924-1.113-1.13-2.853-.088-.754-.675-1.574-.468-2.3a17.064,17.064,0,0,0,.8-4.447c-.979.527-1.99,1.009-2.945,1.569a15.907,15.907,0,0,1,.321,2.385c-.649.116-.766.145-.737.783.059.841.56,1.711.619,2.754a8.116,8.116,0,0,0,.914,3.218,20.686,20.686,0,0,0,1.238,2.551c.324.435.648.377,1.12.348.648,1.624.609,2.479,1.493,4.015l.523.578v4.308c-.077.751-1.085.8-1.569,1.8a28.785,28.785,0,0,0,1.807,8.463c4.992,5.167,7.94,3.57,9.752,9.622-3.308-4.994-4.865-3.014-8.807-5.1-2.955-.975-4.688,4.11-6.861,5.381-.393-2.51.1-5.287.048-7.864-.021-.969.978-3.386,1.569-5.06.008.267,1.27,1.84,1.19.773a15.685,15.685,0,0,1,.1-3.347,3.41,3.41,0,0,0,.076-.492l0-.025h0c.007-.076.015-.15.017-.229.021-.858-1.2.19-1.227.386-.332.809-1.682,1.15-2.4,1.311-.4.09-.568.6-.531,1.046-.673.215-1.429.493-1.534.533-3.826,1.446-6.537,4.115-9.674,5.914.523,1.543,5.63-1.155,8.187-2.018.593-.2,1.787-.883,2.164-.032a1.979,1.979,0,0,1,.036,1.085,18.049,18.049,0,0,0,.66,8.012,3.01,3.01,0,0,0,.57,1.142c1.549,1.71,4.557-1.143,5.877-1.956a4.4,4.4,0,0,1,3.044-.78,5.545,5.545,0,0,1,1.672.726c1.558.892,3.328-.36,4.46,1.02.359.437.493,3.094.918,3.469,1.731,1.528,3.4-1.86,4.349-3.1a12.508,12.508,0,0,1,2.81-3.107,3.064,3.064,0,0,1,3.193-.043,11.366,11.366,0,0,1,2.273,1.576c.682.569,1.9,2.31,2.7,2.527,2.682.731,2.551-4.871,2.368-6.736.295-1.2-1.614-6.339.252-5.9.482.148.961.312,1.439.484,1.835.663,3.656,1.465,5.529,2.069C943.4,200.589,945.646,202.335,945.3,200.742ZM913.65,176.488c.089-.2.442-.348.442-.348s.973,1.363,1.326,1.769,1,1.015,1,1.015a6.766,6.766,0,0,0-1.15.2c-.354.087-1.356.116-1.592-.58-.265-.667.118-.869.206-1.247C914,176.952,913.591,176.691,913.65,176.488Zm5.094,24.811a6.3,6.3,0,0,0-2.776-3.868c-.628-.405,2.166-.265,2.525-1.677.262-1.029-1.307-.514-.784-3.343a13.694,13.694,0,0,1,2.077-1.286c.451-.24.547-1.3,1.061-1.543,2.063-.992,5.164-1.534,6.672-3.016.474-.89.935,6.506-.564,8.456-.672.874-.559,2.127-1.177,3.065a1.179,1.179,0,0,1-.842.593,6.426,6.426,0,0,0-2.589.954,10.361,10.361,0,0,0-2.337,1.947c-.224.251-.467.634-.846.56C918.766,202.063,918.823,201.605,918.745,201.3Z" transform="translate(-890.256 -148.325)"></path><path class="i-logo" d="M927.4,132.128a1.829,1.829,0,0,1,1.444-.674c.116-1.1.042-1.779-.494-1.561-1.825,2.249.261-.331.074-1.389-.787.478-.939-.1-.705-1.073a5.943,5.943,0,0,0,1-2.461c.775-1.423,1.838-2.749,2.785-2.909,2.893.418,5.842-.815,8.778-.251,1.817-1.96,4.266-1.159,6.591-1.953,5.449-3.128,10.863,4.284,1.954.309-.382-.355-1.939-.52-1.172.276,3.765,1.348,4.614,4.92,6.722,7.856-4.279-2.973.726,3.855.865,3.127-.363-3.939,1.887-8.428-1.063-11.452-1.268-1.43-3.376-1.237-4.363-2.9-2.179-2.2-5.465-2.438-8.4-2.754a8.127,8.127,0,0,1-1.4-.24c-.241-.074-.287.439-.078.5a9.266,9.266,0,0,0,1.529.257c-.078.141-.032.426.14.441a13.311,13.311,0,0,1,1.811.282c1.847.9,3.759,1.916,2.594,1.777-2.1-.357-2.617.921-5.172-.188-.932.281-.116,1.18.212,1.63-1.845.7-4.808-1.3-7.053-.56-1.182.008-5.618.934-3.1,1.926a5.949,5.949,0,0,0-.647.106,1.977,1.977,0,0,0-1.448,1.1,9.454,9.454,0,0,0-2.928,3.18,7.354,7.354,0,0,1,1.077-4.069c.641-.624,1.788-1.629,1.574-2.556a.18.18,0,0,1-.054-.091.459.459,0,0,0-.016-.069l0-.005c0-.006-.007-.016-.009-.019a.333.333,0,0,0-.018-.03v0c-.015-.014-.014-.016-.007-.009-.009-.01-.018-.02-.027-.03l0,0-.11.054a.111.111,0,0,0-.052.061,12.285,12.285,0,0,0-3.7,4.693c-1.191,3.715.673,7.192,1.171,11.061A6.435,6.435,0,0,0,927.4,132.128Z" transform="translate(-913.151 -114.068)"></path></g></g></g></svg>
+        </a>
+    </header>
+    <main class="container container--fixed">
+        <div class="row">
+            <div class="col__xl__7">
+                <div class="accordion accordion--checkout">
+                    <div id="step2" class="card card--checkout active">
+                        <div class="card__head">
+                            <h2 class="card__title d-flex align-items-center">
+                                <span class="card__title__number">2</span> Shipping and billing information
+                            </h2>
+                            <div class="card__edit card-copy-js" data-edit="step2" data-active="step3">
+                                <span class="tooltip copy-text copy-text--checkout copy-step" data-type="content-shipping-billing">
+                                    <span id="tooltip"></span>
+                                    Copy
+                                </span>
+                            </div>
+                        </div>
+                        <div class="collapse card__body collapse--edit">
+                            <div class="card__body__info info-step-2" id="content-shipping-billing"></div>
+                            <div class="card__body__frm">
+                                <h3 class="card__body__title">Ship to:</h3>
+                                <form action="" method="POST" class="frm frm--checkout submit-js" name="frm_step2" data-edit="step2" data-active="step3">
+                                    <h4 class="card__body__title card__body--title">Contact person</h4>
+                                    <div class="row row--fixed">
+                                        <div class="col__sm__4 col--fixed">
+                                            <div class="frm__group">
+                                                <input type="text" name="first_name" class="label-js frm__control frm__control--lg"/>
+                                                <label for="first_name" class="frm__label">First Name</label>
+                                                <p class="first_name frm__error">This is a required field.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col__sm__4 col--fixed">
+                                            <div class="frm__group">
+                                                <input type="text" name="last_name" class="label-js frm__control frm__control--lg"/>
+                                                <label for="last_name" class="frm__label">Last Name</label>
+                                                <p class="last_name frm__error">This is a required field.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col__sm__4 col--fixed">
+                                            <div class="frm__group">
+                                                <input type="text" name="phone_number" class="label-js frm__control frm__control--lg"/>
+                                                <label for="phone_number" class="frm__label">Phone Number</label>
+                                                <p class="phone_number frm__error">This is a required field.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="card__body__title card__body--title">Delivery address</h4>
+                                    <div class="row row--fixed">
+                                        <div class="col__sm__4 col--fixed">
+                                            <div class="frm__group mb-10">
+                                                <input type="text" name="address" class="label-js frm__control frm__control--lg"/>
+                                                <label for="address" class="frm__label">Address</label>
+                                                <p class="address frm__error">This is a required field.</p>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col__sm__4 col--fixed">
+                                            <div class="frm__group mb-10">
+                                                <input type="text" name="city" class="label-js frm__control frm__control--lg"/>
+                                                <label for="city" class="frm__label">City</label>
+                                                <p class="city frm__error">This is a required field.</p>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col__sm__4 col--fixed">
+                                            <div class="frm__group mb-10">
+                                                <input type="text" name="zip" class="label-js frm__control frm__control--lg"/>
+                                                <label for="zip" class="frm__label">Zip</label>
+                                                <p class="zip frm__error">This is a required field.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col__sm__4 col--fixed">
+                                            <div class="frm__group">
+                                                <input type="text" name="address1" class="label-js frm__control frm__control--lg"/>
+                                                <label for="address1" class="frm__label">Address</label>
+                                                <p class="frm__error"></p>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                    <div class="row row--fixed">
+                                        <div class="frm__group col__sm__6 col--fixed">
+                                            <div class="frm__control frm__control--option">
+                                                <span class="arrow arrow--hometown hometown-js country" tabindex="0" data-active="region-js">
+                                                    United States
+                                                </span>
+                                                <div class="frm__dropdown country-js stop-body-js">
+                                                    <input type="text" onkeyup="searchHometown(this)" name="countries" data-value="US" data-name="United States" class="search-input-js frm__control  frm__dropdown__search">
+                                                    <ul class="frm__dropdown__hometown overscroll">
+                                                        <li class="active">Suggested</li>
+                                                        <li data-id="CA" data-type="country" class="option active__suggest"><a>Canada</a></li>
+                                                        <li data-id="US" data-type="country" class="option active__suggest"><a>United States</a></li>
+                                                        <li><hr class="hr"/></li>
+                                                        <li class="list-countries-js active">All countries</li>
+                                                    </ul>
+                                                </div>  
+                                            </div>                                          
+                                        </div>
+                                        <div class="col__sm__6 col--fixed">
+                                            <div id="state" class="frm__group frm__group--none">
+                                                <input type="text" name="state" class="label-js frm__control frm__control--lg"/>
+                                                <label for="state" class="frm__label">State</label>
+                                            </div>
+                                            <div id="region" class="frm__group">
+                                                <div class="frm__control frm__control--option">
+                                                    <span class="arrow arrow--hometown hometown-js region" data-active="country-js" tabindex="0">Select region</span>
+                                                    <div class="frm__dropdown region-js stop-body-js">
+                                                        <input type="text" onkeyup="searchHometown(this)" name="regions" data-value="" data-name="" class="search-input-js frm__control  frm__dropdown__search">
+                                                        <ul class="frm__dropdown__hometown overscroll">
+                                                            <li class="list-regions-js"></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <p class="regions frm__error">This is a required field.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="card__body__title card__body--title">Add a label to this address</h4>
+                                    <div class="row row--fixed">
+                                        <div class="col__sm__4 col--fixed">
+                                            <div class="frm__group">
+                                                <input type="text" name="add_address" class="label-js frm__control frm__control--lg"/>
+                                                <label for="add_address" class="frm__label">Ext: Home, Office ...</label>
+                                                <p class="frm__error"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="frm__group--billing">
+                                        <label class="frm__checkbox frm__checkbox--checkout" onchange="toggleCoupon('condition-js')">
+                                            My billing address is different from shipping address
+                                            <input type="checkbox" name="billing-address" class="frm__checkbox__control checkbox-js"/>
+                                            <span class="frm__checkbox__checkmark frm__checkbox__checkmark--checkout"></span>
+                                        </label>
+                                        <div class="frm__condition" id="condition-js">
+                                            If your shipping address is different then billing address, please call our office to place your order. 703-354-7336
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn--checkout btn-js">Save and Continue to shipping</button>                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="step3" class="card card--checkout">
+                        <div class="card__head">
+                            <h2 class="card__title d-flex align-items-center">
+                                <span class="card__title__number">3</span> Shipping methods
+                            </h2>
+                            <div class="card__edit card-active card-edit-js" data-edit="step3" data-active="step4">
+                                <span class="tooltip copy-text copy-text--checkout copy-step" data-type="content-shipping-method">
+                                    <span id="tooltip"></span>
+                                    Copy
+                                </span>
+                            </div>
+                        </div>
+                        <div class="collapse card__body collapse--edit">
+                            <div class="card__body__info">
+                                <p class="card__body__text"><span class="text__price">$107.49</span>USPS - Priority Mail Express International</p>
+                            </div>
+                            <div class="card__body__frm">
+                                <form action="" method="POST" class="frm frm--checkout submit-js" name="frm_step3" data-edit="step3" data-active="step4">
+                                    <!--frm__shipping--active-->
+                                    <div id="content-shipping-method">
+                                        <div class="frm frm--checkout shipping-method">
+                                            <div class="frm__shipping shipping-js" data-shipping-method="Priority Mail International,USPS,86.89">
+                                                <div class="frm__shipping__left">
+                                                    <span class="frm__shipping__with">Shipping WITH</span>
+                                                    <div class="frm__shipping__info">
+                                                        <h4 class="frm__name">Priority Mail International</h4>
+                                                        <p class="frm__text">USPS</p>
+                                                    </div>
+                                                </div>
+                                                <div class="frm__shipping__right">
+                                                    $86.89
+                                                </div>
+                                            </div>
+                                            <div class="frm__shipping shipping-js" data-shipping-method="Priority Mail Express International,USPS,107.49">
+                                                <div class="frm__shipping__left">
+                                                    <span class="frm__shipping__with">Shipping WITH</span>
+                                                    <div class="frm__shipping__info">
+                                                        <h4 class="frm__name">Priority Mail Express International</h4>
+                                                        <p class="frm__text">USPS</p>
+                                                    </div>
+                                                </div>
+                                                <div class="frm__shipping__right">
+                                                    $107.49
+                                                </div>
+                                            </div>
+                                            <div class="frm__shipping shipping-js" data-shipping-method="International Economy,FEDEX,91.54">
+                                                <div class="frm__shipping__left">
+                                                    <span class="frm__shipping__with">Shipping WITH</span>
+                                                    <div class="frm__shipping__info">
+                                                        <h4 class="frm__name">International Economy</h4>
+                                                        <p class="frm__text">FEDEX</p>
+                                                    </div>
+                                                </div>
+                                                <div class="frm__shipping__right">
+                                                    $91.54
+                                                </div>
+                                            </div>
+                                            <div class="frm__shipping shipping-js" data-shipping-method="International Priority,FEDEX,97.34">
+                                                <div class="frm__shipping__left">
+                                                    <span class="frm__shipping__with">Shipping WITH</span>
+                                                    <div class="frm__shipping__info">
+                                                        <h4 class="frm__name">International Priority</h4>
+                                                        <p class="frm__text">FEDEX</p>
+                                                    </div>
+                                                </div>
+                                                <div class="frm__shipping__right">
+                                                    $97.34
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="type_shipping" id="type-shipping-js"/>
+                                            <p class="frm__error frm__error--policy">
+                                                You did not select a shipping method. Please select it and continue to payment.
+                                            </p>
+                                            <!-- <p class="frm__shipping__policy order__shipping">
+                                                For more shipping related info please view <a href="#" class="frm__link modal-js" data-modal="modal-shipping">Shipping and refund policy</a>
+                                            </p> -->
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn--checkout btn-js" disabled>Continue to payment</button>
+                                </form>
+                                <div id="modal-shipping" class="modal stop-body-js">
+                                    <div class="modal__content">
+                                        <div class="modal__header">
+                                            <h2 class="modal__header__title">Shipping and refund policy</h2>
+                                            <span class="icon__close close-modal-js"></span>
+                                        </div>
+                                        <div class="modal__body overscroll">
+                                            <h4 class="heading-quaternary">Local Warehouse Time (EST)</h4>
+                                            <p>For <strong>Guaranteed Same Day Shipping</strong>, your order will need to be placed before 5:30 AM EST.</p>
+                                            <p><strong>Guaranteed Next Business Day</strong> – If your order doesn’t qualify for the Same Day Shipping, it will be out the next business day, guaranteed! Exception applies during weekends (orders placed on Friday after 5:30am EST will ship out on Monday) and major holidays since the warehouse is closed.</p>
+                                            <p><strong>Address Validations:</strong>Our warehouse uses an address validation software provided by USPS, so to avoid any delays we suggest you don’t abbreviate anything in your address</p>
+                                            <h4 class="heading-quaternary">CANCELLATION POLICY</h4>
+                                            <p><strong>Orders that reached the warehouse cannot be cancelled.</strong> Orders are no longer editable or cancelable when they have been submitted to our warehouse. It is your responsibility to make sure the address and products you are ordering are correctly entered before submitting the order.</p>
+                                            <h4 class="heading-quaternary">FREE SHIPPING</h4>
+                                            <p>Orders that are over $160.00 and will be shipped in the United States get offered Free Shipping. All orders placed with free shipping get shipped out within 24 hours (except on weekends) and will be shipped out using FEDEX SMARTPOST.</p>
+                                            <p><strong>FedEx SmartPost</strong> is a hybrid shipping service in which FedEx will pick up packages from the shipping destination, and then hand the packages off to the U.S. Postal Service (USPS) for the final delivery to the end customer.</p>
+                                            <p>What’s unique about SmartPost is that there are two different carriers (FedEx and USPS) handling every package. One of the reasons this service was created is that, each day, the USPS is already visiting nearly every address in the United States to deliver mail, so there is efficiency and little-added cost for USPS to deliver small packages to residences, which is not necessarily the case with FedEx and UPS.</p>
+                                            <p><strong>Transit time:</strong> FedEx SmartPost delivery averages between 4- 6 business days. This can be longer at times so please make a note in case you need your package to arrive on a certain date. A faster option should be selected.</p>
+                                            <h4 class="heading-quaternary">INTERNATIONAL SHIPMENTS</h4>
+                                            <p>FedEx, UPS, and DHL are offered for international orders and tracking on all services is available. The US Postal Service offers tracking on Express International shipments. No other USPS services offer reliable tracking or delivery confirmation internationally. You will often only see a “pickup” scan for services such as Priority Mail International, but not a “delivery” scan. Also consider that cross-border shipments must go through the customs security measures. The customs bureau of every country has the right to stop any shipment and charge a fee. Drberg.com is not responsible for any custom fee that you may incur. This is your responsibility. The shipping cost that you paid does not include any customs or export fees.</p>
+                                            <p><strong>Shipping from the United States Using FedEx</strong></p>
+                                            <table class="table table-bordered shipping-return">
+                                                <thead class="shipping-return-tab">
+                                                <tr><th>Service name</th><th>Delivery confirmation</th><th>In-transit tracking</th><th>Delivery window (days)</th></tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="active">2Day</td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td>2 business days<br> (if placed before 5:30am EST)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="active">Ground</td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td>1-5 business days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="active">Home Delivery</td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td>1-5 business days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="active">Ground Signature Required</td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td>1-5 business days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="active">Home Delivery Signature Required</td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td>1-5 business days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="active">SmartPost</td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td>2-7 business days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="active">FedEx International-Canada</td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td>2-7 business days</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <p><strong>Shipping from the United States Using USPS</strong></p>
+                                            <table class="table table-bordered shipping-return">
+                                                <thead class="shipping-return-tab">
+                                                <tr><th>Service name</th><th>Delivery confirmation</th><th>In-transit tracking</th><th>Signature required</th><th>Delivery window (business days)</th></tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="active">Priority Mail Express International</td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td></td>
+                                                    <td>3-5 business days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="active">First Class Mail Parcel + Delivery Confirmation</td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td></td>
+                                                    <td>2-5 business days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="active">First Class Mail Parcel + Signature Required</td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td>2-5 business days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="active">Priority Mail + Delivery Confirmation</td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td></td>
+                                                    <td>2-3 business days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="active">Priority Mail Flat Rate Medium &amp;Large Box</td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td></td>
+                                                    <td>2-3 business days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="active">Priority Mail Flat Rate Padded Envelope</td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td></td>
+                                                    <td>2-3 business days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="active">Priority Mail International</td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td></td>
+                                                    <td>6-10 business days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="active">Priority Mail International Flat Rate Medium &amp; Large Box</td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td></td>
+                                                    <td>6-10 business days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="active">Priority Mail International Flat Rate Padded Envelope</td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td></td>
+                                                    <td>6-10 business days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="active">Priority Mail + Signature Required</td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td>2-3 business days</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <p><strong>Shipping Using DHL Express</strong></p>
+                                            <table class="table table-bordered shipping-return">
+                                                <thead class="shipping-return-tab">
+                                                <tr><th>Service name</th><th>Delivery confirmation</th><th>In-transit tracking</th><th>Signature required</th><th>Delivery window (days)</th></tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="active">Express Worldwide</td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td></td>
+                                                    <td>5-10 business days</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <p><strong>Shipping Using DHL Global Mail</strong></p>
+                                            <table class="table table-bordered shipping-return">
+                                                <thead class="shipping-return-tab">
+                                                <tr><th>Service name</th><th>Delivery confirmation</th><th>In-transit tracking</th><th>Delivery window (days)</th></tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="active">Global Mail Packet Plus</td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td>4-11 business days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="active">Global Mail Packet Plus Priority International</td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td>3-8 business days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="active">Domestic Lightweight Parcel</td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td>3-8 business days</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <p><strong>Shipping with DHL Euro Parcel</strong></p>
+                                            <table class="table table-bordered shipping-return">
+                                                <thead class="shipping-return-tab">
+                                                <tr><th>Service name</th><th>Delivery confirmation</th><th>In-transit tracking</th><th>Delivery window (days)</th></tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="active">Euro Parcel Plus</td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td><img src="../assets/images/tick.svg" alt="check" width="15px"></td>
+                                                    <td>1-5 business days</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <p><strong>NOTE:</strong> Drberg.com would no longer be responsible for any packages once the carrier has confirmed it has been delivered.</p>
+                                            <h4 class="heading-quaternary">UNDELIVERABLE SHIPMENTS/RETURNS</h4>
+                                            <p>Our warehouse can only receive merchandise with a proper RMA # attached to it. Merchandise returned directly to our warehouse without a proper RMA # will either be refused or discarded by the warehouse without any notice to us.</p>
+                                            <p><strong>RMA #:</strong> ALL CLIENTS WANTING TO DO A RETURN TRANSACTION MUST CALL THE OFFICE FIRST AND GET AN RMA #. An unpaid label will be sent to you via email. This will include the RMA# and return address. To be received properly, this must be included in the box.</p>
+                                            <p><strong>RETURN LABELS:</strong> We do not provide return labels. Customer is responsible for paying to ship the products they want to return.</p>
+                                            <p><strong>RETURN PROCESSING TIME:</strong> Takes 1-2 weeks from the date it was received back to the warehouse for the return to be processed. <strong>NOTE:</strong> The warehouse is closed on weekends and major holidays.</p>
+                                            <p>YOU HAVE 60 DAYS FROM THE DATE OF PURCHASE TO GET A REFUND. SHIPPING COST IS NON-REFUNDABLE.</p>
+                                            <p><strong>NOTE:</strong> ONCE THE ORDER HAS LEFT OUR WAREHOUSE, IT IS YOUR RESPONSBILITY TO RETURN IT BACK TO US FOR A REFUND.</p>
+                                        </div>
+                                        <div class="modal__footer">
+                                            <button class="btn btn--add close-modal-js">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="step4" class="card card--checkout">
+                        <div class="card__head">
+                            <h2 class="card__title d-flex align-items-center">
+                                <span class="card__title__number">
+                                    4
+                                </span> Payment
+                            </h2>
+                            <div class="card__edit card-active">
+                                <span class="tooltip copy-text copy-text--checkout copy-step" data-type="payment-method">
+                                    <span id="tooltip"></span>
+                                    Copy
+                                </span>
+                            </div>
+                        </div>
+                        <div class="collapse collapse--edit card__body card__body--mobile">
+                            <div class="card__body__info">
+                                <p class='card__body__text d-none status-success'>Purchased Successfully - The Order Has Been Placed.</p>
+                                <p class='card__body__text d-none status-pending'>Order Pending - Although The Payment Was Processed. The Result is Still Pending.</p>
+                                <p class='card__body__text d-none status-unpayment'>Payment Failed - Unable to process the purchase transaction.</p>
+                            </div>
+                            <div class="card__body__frm">
+                                <form action="" method="POST" class="frm frm--checkout submit-js" name="frm_step4" data-edit="step4">
+                                    <div class="row row--fixed">
+                                        <div class="col__6 col__sm__4 col--fixed d-flex">
+                                            <div class="frm__pay__type frm__pay--type">
+                                                <h4 class="frm__pay__title">Credit Card</h4>
+                                                <p class="frm__pay__info">Visa, Mastercard etc.</p>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                    <h4 class="card__body__title card__body--title">Add card Details</h4>
+                                    <div class="col__12 col__lg__9 col__hd__7 col--fixed-padding fixed--mobile">
+                                        <div class="row row--fixed">
+                                            <div class="frm__group col__12 col--fixed frm__group--credit">
+                                                <span for="credit_number" class="fs-12 label_pay">Credit number</span>
+                                                <div class="frm__group__input">
+                                                    <span class="input__icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10">
+                                                            <defs>
+                                                                <style>
+                                                                    .a {
+                                                                        fill: #013253;
+                                                                    }
+                                                                </style>
+                                                            </defs>
+                                                            <g transform="translate(-97.9 -342)">
+                                                                <path class="a" d="M16.25,7.75a1,1,0,0,0-1-1h-12a1,1,0,0,0-1,1v1.5h14Z" transform="translate(95.65 335.25)">
+                                                                </path>
+                                                                <path class="a" d="M2.25,20.75a1,1,0,0,0,1,1h12a1,1,0,0,0,1-1v-5h-14Zm4.438-1.5h5.125a.439.439,0,0,1,.438.438h0a.439.439,0,0,1-.437.438H6.688a.439.439,0,0,1-.437-.437h0A.439.439,0,0,1,6.688,19.25Zm-2.25,0h.375a.439.439,0,0,1,.438.438h0a.439.439,0,0,1-.437.438H4.438A.439.439,0,0,1,4,19.688H4A.439.439,0,0,1,4.438,19.25Z" transform="translate(95.65 330.25)"></path>
+                                                            </g>
+                                                        </svg>
+                                                    </span>
+                                                    <input id="credit_number" type="text" name="credit_number" class="hashcode remove-error-js frm__control" value="1234567891234567" maxlength="23" autocomplete="off" disabled/>
+                                                </div>
+                                                <p class="credit_number frm__error">Invalid Credit Card Number</p>
+                                            </div>
+                                            <div class="frm__group col__8 col--fixed">
+                                                <span for="name_card" class="fs-12 label_pay">Name on Card</span>
+                                                <div class="frm__group__input">
+                                                    <span class="input__icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                                                            <defs>
+                                                                <style>
+                                                                    .a {
+                                                                        fill: #013253;
+                                                                    }
+                                                                </style>
+                                                            </defs>
+                                                            <path class="a" d="M6,6.75A3.375,3.375,0,1,0,2.625,3.375,3.376,3.376,0,0,0,6,6.75ZM9,7.5H7.709a4.08,4.08,0,0,1-3.417,0H3a3,3,0,0,0-3,3v.375A1.125,1.125,0,0,0,1.125,12h9.75A1.125,1.125,0,0,0,12,10.875V10.5A3,3,0,0,0,9,7.5Z">
+                                                            </path>
+                                                        </svg>
+                                                    </span>
+                                                    <input type="text" name="name_card" class="hashcode remove-error-js frm__control" value="An Le" disabled/>
+                                                </div>
+                                                <p class="name_card frm__error">Invalid name card</p>
+                                            </div>
+                                            <div class="frm__group col__4 col--fixed frm__group--security">
+                                                <span for="security_cvv" class="fs-12 label__security">Security CVV</span>
+                                                <div class="frm__group__input">
+                                                    <span class="input__icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16.374" height="12" viewBox="0 0 16.374 12">
+                                                            <defs>
+                                                                <style>
+                                                                    .a {
+                                                                        fill: #013253;
+                                                                    }
+                                                                </style>
+                                                            </defs>
+                                                            <path class="a" d="M5.731,6A3.146,3.146,0,0,0,9.006,3,3.146,3.146,0,0,0,5.731,0,3.146,3.146,0,0,0,2.456,3,3.146,3.146,0,0,0,5.731,6ZM8.187,7.5a1.384,1.384,0,0,1,.207-.715c-.123-.012-.243-.035-.371-.035H7.6a4.826,4.826,0,0,1-3.73,0H3.439A3.3,3.3,0,0,0,0,9.9v.976A1.18,1.18,0,0,0,1.228,12H8.415a1.4,1.4,0,0,1-.228-.75Zm7.368-.75h-.819V4.875A1.967,1.967,0,0,0,12.69,3a1.967,1.967,0,0,0-2.047,1.875V6.75H9.825a.787.787,0,0,0-.819.75v3.75a.787.787,0,0,0,.819.75h5.731a.787.787,0,0,0,.819-.75V7.5A.787.787,0,0,0,15.555,6.75ZM12.69,10.125a.753.753,0,1,1,.819-.75A.787.787,0,0,1,12.69,10.125Zm.819-3.375H11.871V4.875a.822.822,0,0,1,1.637,0Z">
+                                                            </path>
+                                                        </svg>
+                                                    </span>
+                                                    <input type="text" name="security_cvv" class="hashcode remove-error-js frm__control" value="123" maxlength="4" autocomplete="off" disabled/>
+                                                </div>
+                                                <p class="security_cvv frm__error">Invalid CVV</p>
+                                            </div>
+                                            <div class="frm__group col__12 col--fixed">
+                                                <span for="expiration" class="label__expiration fs-14">Expiration:</span>
+                                                <div class="row row--fixed">
+                                                    <div class="col__30 mb-2 col--fixed">
+                                                        <input type="text" class="hashcode frm__group__date" value="09" readonly/>
+                                                    </div>
+                                                    <div class="col__30 mb-2 col--fixed">         
+                                                        <input type="text" class="hashcode frm__group__date" value="2025" readonly/>                                               
+                                                    </div>
+                                                </div>
+                                                <p class="expiration_month frm__error">Invalid Expiry Date</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="frm__group frm__group--policy">
+                                        <label class="frm__checkbox frm__checkbox--policy">
+                                            Please accept the <a href="#" class="frm__checkbox__link modal-js" data-modal="modal-term">Terms and Conditions</a> to place the order
+                                            <input type="checkbox" name="terms-conditions" class="remove-change-js frm__checkbox__control" disabled checked/>
+                                            <span class="frm__checkbox__checkmark frm__checkbox__checkmark--checkout frm__checkbox__checkmark--policy"></span>
+                                        </label>
+                                        <p class="frm__error">This is a required field.</p>
+                                    </div>
+                                    <button type="submit" class="btn btn--checkout" disabled>Place Order ($<span id="total-place-js"></span>)</button>                                
+                                </form>
+                            </div>
+                        </div>
+                        <div id="payment-method" style="display: none;">
+                            <div class="order__info__payment payment-method">
+                                <label class="frm__checkbox">
+                                    <span class="info__payment">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="30" viewBox="0 0 41 24"><defs><style>.a78{fill:#fff;stroke:#e3e3e3;}.b78{fill:#1a1f71;}.c78{stroke:none;}.d{fill:none;}</style></defs><g transform="translate(-1130 -256)"><g class="a78" transform="translate(1130 256)"><rect class="c78" width="41" height="24" rx="3"></rect><rect class="d" x="0.5" y="0.5" width="40" height="23" rx="2.5"></rect></g><g transform="translate(1133.891 263.055)"><path class="b78" d="M11.746.185l-4.051,10H5.045l-1.987-8a1.1,1.1,0,0,0-.586-.871A9.8,9.8,0,0,0,0,.475L.051.185H4.306A1.178,1.178,0,0,1,5.453,1.214L6.5,6.993,9.1.185Zm10.37,6.729c0-2.639-3.516-2.8-3.491-3.958,0-.369.331-.739,1.07-.844a4.619,4.619,0,0,1,2.472.449L22.6.449A6.319,6.319,0,0,0,20.257,0c-2.472,0-4.2,1.372-4.23,3.3C16,4.75,17.275,5.542,18.218,6.017s1.3.818,1.3,1.24c0,.66-.79.976-1.5.976A4.985,4.985,0,0,1,15.441,7.6l-.459,2.19a6.882,6.882,0,0,0,2.777.528c2.624.026,4.332-1.319,4.357-3.4Zm6.523,3.272h2.319l-2.013-10h-2.14a1.139,1.139,0,0,0-1.07.739l-3.771,9.263h2.624l.51-1.5h3.21Zm-2.8-3.536L27.162,2.9l.764,3.747ZM15.314.185l-2.064,10h-2.5l2.064-10Z" transform="translate(0 0)"></path></g></g></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="30" viewBox="0 0 35 24"><defs><style>.a79{fill:#fff;stroke:#e3e3e3;}.b79{fill:#222;}.c79{fill:#ff5f00;}.d79{fill:#eb001b;}.e79{fill:#f79e1b;}.f79{stroke:none;}.g79{fill:none;}</style></defs><g transform="translate(-1175 -256)"><g class="a79" transform="translate(1175 256)"><rect class="f79" width="35" height="24" rx="3"></rect><rect class="g79" x="0.5" y="0.5" width="34" height="23" rx="2.5"></rect></g><g transform="translate(1182.545 261.281)"><g transform="translate(0 0)"><path class="b79" d="M4.206,30.954v-1.04a.63.63,0,0,0-.158-.477.546.546,0,0,0-.441-.182.626.626,0,0,0-.551.295.558.558,0,0,0-.518-.295.539.539,0,0,0-.47.243V29.29H1.76v1.664h.308V30a.405.405,0,0,1,.1-.315.35.35,0,0,1,.29-.118c.227,0,.356.156.356.433v.953h.308V30a.405.405,0,0,1,.1-.315.35.35,0,0,1,.29-.118c.227,0,.356.156.356.433v.953ZM9.26,29.307H8.693v-.5H8.385v.5H8.061V29.6h.324v.78c0,.381.13.606.518.606a.861.861,0,0,0,.421-.121l-.1-.295a.507.507,0,0,1-.292.087.219.219,0,0,1-.184-.076.254.254,0,0,1-.059-.2v-.8H9.26Zm2.883-.052a.479.479,0,0,0-.421.243V29.29h-.308v1.664h.308v-.936c0-.277.13-.451.34-.451a.889.889,0,0,1,.211.035l.1-.312A1.026,1.026,0,0,0,12.143,29.255Zm-4.357.173a1.056,1.056,0,0,0-.632-.173c-.389,0-.632.191-.632.52,0,.277.178.433.518.485l.162.017c.178.035.292.1.292.191,0,.121-.13.208-.373.208A.816.816,0,0,1,6.6,30.5l-.162.26a1.118,1.118,0,0,0,.664.208c.454,0,.7-.225.7-.537s-.194-.433-.535-.485l-.162-.017c-.146-.017-.275-.069-.275-.173s.13-.208.308-.208a1.109,1.109,0,0,1,.486.139Zm4.714.693a.85.85,0,0,0,.222.628.737.737,0,0,0,.587.238.776.776,0,0,0,.551-.191l-.162-.26a.623.623,0,0,1-.405.156.56.56,0,0,1,0-1.109.623.623,0,0,1,.405.156l.162-.26a.776.776,0,0,0-.551-.191.7.7,0,0,0-.589.211.807.807,0,0,0-.221.621Zm-2.187-.866a.775.775,0,0,0-.761.866.848.848,0,0,0,.216.623.736.736,0,0,0,.578.244.95.95,0,0,0,.632-.225l-.162-.243a.743.743,0,0,1-.454.173.466.466,0,0,1-.47-.433h1.15v-.139c0-.52-.292-.866-.729-.866Zm0,.312a.373.373,0,0,1,.286.115.429.429,0,0,1,.119.3H9.875a.427.427,0,0,1,.437-.416Zm-4.2.554V29.29H5.81V29.5a.581.581,0,0,0-.5-.243.868.868,0,0,0,0,1.733.58.58,0,0,0,.5-.243v.208h.308Zm-1.263,0a.5.5,0,0,1,.506-.485.522.522,0,0,1-.02,1.039.461.461,0,0,1-.359-.161.532.532,0,0,1-.127-.394Zm11.971-.866a.479.479,0,0,0-.421.243V29.29H16.1v1.664H16.4v-.936c0-.277.13-.451.34-.451a.89.89,0,0,1,.211.035l.1-.312a1.026,1.026,0,0,0-.227-.035Zm-1.2.866V29.29h-.308V29.5a.581.581,0,0,0-.5-.243.868.868,0,0,0,0,1.733.581.581,0,0,0,.5-.243v.208h.308Zm-1.247,0a.5.5,0,0,1,.506-.485.522.522,0,0,1-.02,1.039c-.308.017-.486-.243-.486-.554Zm4.39,0v-1.49h-.308V29.5a.581.581,0,0,0-.5-.243.868.868,0,0,0,0,1.733.581.581,0,0,0,.5-.243v.208h.308Zm-1.263,0a.5.5,0,0,1,.506-.485.522.522,0,0,1-.02,1.039.461.461,0,0,1-.359-.161A.532.532,0,0,1,17.5,30.122Z" transform="translate(-1.126 -16.119)"></path><rect class="c79" width="5.684" height="9.142" transform="translate(6.708 1.244)"></rect><path class="d79" d="M7.613,5.962A5.8,5.8,0,0,1,9.857,1.391a5.963,5.963,0,0,0-6.991-.217A5.772,5.772,0,0,0,.584,7.694a5.935,5.935,0,0,0,9.274,2.839A5.8,5.8,0,0,1,7.613,5.962Z" transform="translate(-0.316 -0.147)"></path><path class="e79" d="M31.607,5.97a5.808,5.808,0,0,1-3.318,5.223,5.965,5.965,0,0,1-6.215-.652,5.778,5.778,0,0,0,0-9.142A5.965,5.965,0,0,1,28.289.747,5.808,5.808,0,0,1,31.607,5.97Z" transform="translate(-12.517 -0.155)"></path></g></g></g></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="30" viewBox="0 0 48 30"><defs><style>.a80{fill:#fff;stroke:#e2e2e2;}.b80{fill:#016fd0;}.c80{stroke:none;}.d80{fill:none;}</style></defs><g transform="translate(-1238 -419)"><g class="a80" transform="translate(1238 419)"><rect class="c80" width="48" height="30" rx="3"></rect><rect class="d80" x="0.5" y="0.5" width="47" height="29" rx="2.5"></rect></g><g transform="translate(1101.209 75.233)"><path class="b80" d="M142.645,352.584l-1.952,4.538h1.271l.36-.909h2.094l.358.909h1.3l-1.95-4.538Zm.722,1.056.638,1.588h-1.278Z" transform="translate(0 -0.019)"></path><path class="b80" d="M283.223,357.1v-4.538l1.806.007,1.05,2.926,1.025-2.933H288.9V357.1h-1.135v-3.344l-1.2,3.344h-.995l-1.206-3.344V357.1Z" transform="translate(-137.014)"></path><path class="b80" d="M449.861,357.1v-4.538h3.7v1.015h-2.556v.776h2.5v.955h-2.5v.806h2.556v.985Z" transform="translate(-297.203)"></path><path class="b80" d="M562.5,352.584v4.538h1.135V355.51h.478l1.36,1.612h1.386l-1.493-1.672a1.382,1.382,0,0,0,1.245-1.394,1.468,1.468,0,0,0-1.586-1.472Zm1.135,1.015h1.3a.521.521,0,0,1,.537.478.513.513,0,0,1-.521.478h-1.314Z" transform="translate(-405.48 -0.019)"></path><path class="b80" d="M681.844,357.1h-1.158v-4.538h1.158Z" transform="translate(-519.095)"></path><path class="b80" d="M727.087,357.1h-.25a2,2,0,0,1-1.944-2.25,2.079,2.079,0,0,1,2.254-2.288H728.4v1.075h-1.3a1.092,1.092,0,0,0-1.059,1.224,1.111,1.111,0,0,0,1.224,1.248h.3Z" transform="translate(-561.591)"></path><path class="b80" d="M796.9,352.584l-1.952,4.538h1.271l.36-.909h2.094l.358.909h1.3l-1.95-4.538Zm.722,1.056.638,1.588h-1.278l.64-1.588Z" transform="translate(-628.938 -0.019)"></path><path class="b80" d="M937.434,357.1v-4.538h1.442l1.842,2.851v-2.851h1.135V357.1h-1.4l-1.888-2.926V357.1Z" transform="translate(-765.907)"></path><path class="b80" d="M354.2,562.314v-4.538h3.7v1.015h-2.556v.776h2.5v.955h-2.5v.806H357.9v.985Z" transform="translate(-205.242 -197.27)"></path><path class="b80" d="M822.946,562.314v-4.538h3.7v1.015h-2.556v.776h2.484v.955h-2.484v.806h2.556v.985Z" transform="translate(-655.85 -197.27)"></path><path class="b80" d="M452.508,562.314l1.8-2.241-1.845-2.3h1.429l1.1,1.42,1.1-1.42h1.373l-1.821,2.269,1.806,2.269h-1.429l-1.067-1.4-1.041,1.4Z" transform="translate(-299.706 -197.27)"></path><path class="b80" d="M584.869,557.795v4.538h1.164V560.9h1.194A1.57,1.57,0,0,0,589,559.321a1.494,1.494,0,0,0-1.629-1.526Zm1.164,1.026h1.258a.512.512,0,0,1,.56.523.524.524,0,0,1-.564.523h-1.254v-1.045Z" transform="translate(-426.986 -197.289)"></path><path class="b80" d="M704.448,557.776v4.538h1.135V560.7h.478l1.36,1.612h1.386l-1.493-1.672a1.382,1.382,0,0,0,1.245-1.394,1.468,1.468,0,0,0-1.586-1.472Zm1.135,1.015h1.3a.521.521,0,0,1,.537.478.513.513,0,0,1-.521.478h-1.314Z" transform="translate(-541.938 -197.27)"></path><path class="b80" d="M928.609,562.314v-.985h2.271c.336,0,.481-.182.481-.381s-.145-.384-.481-.384h-1.026a1.269,1.269,0,0,1-1.389-1.359c0-.728.455-1.429,1.78-1.429h2.209l-.478,1.021h-1.911c-.365,0-.478.192-.478.375a.4.4,0,0,0,.418.4h1.075a1.245,1.245,0,0,1,1.426,1.3,1.361,1.361,0,0,1-1.48,1.444Z" transform="translate(-757.285 -197.27)"></path><path class="b80" d="M1036.205,562.314v-.985h2.271c.336,0,.481-.182.481-.381s-.145-.384-.481-.384h-1.026a1.269,1.269,0,0,1-1.389-1.359c0-.728.455-1.429,1.78-1.429h2.209l-.478,1.021h-1.911c-.365,0-.478.192-.478.375a.4.4,0,0,0,.418.4h1.075a1.245,1.245,0,0,1,1.426,1.3,1.361,1.361,0,0,1-1.48,1.444Z" transform="translate(-860.717 -197.27)"></path></g></g></svg>
+                                    </span>
+                                    <input type="radio" name="pay_type" class="frm__checkbox__control" data-radio="card" checked/>
+                                    <span class="frm__checkbox__checkmark"></span>
+                                </label>
+                                <label class="frm__checkbox">
+                                    <span class="info__payment">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="30" viewBox="0 0 100 30"><defs><style>.a83{fill:#fff;stroke:#e2e2e2;}.b83{fill:#238ec2;}.b83,.c83,.d83{fill-rule:evenodd;}.c83{fill:#253667;}.d83{fill:#20274f;}.e83{stroke:none;}.f83{fill:none;}</style></defs><g transform="translate(-1130 -468)"><g class="a83" transform="translate(1130 468)"><rect class="e83" width="100" height="30" rx="3"></rect><rect class="f83" x="0.5" y="0.5" width="99" height="29" rx="2.5"></rect></g><g transform="translate(7 166)"><path class="b83" d="M24.608,27.728c-.208,1.382-1.254,1.382-2.264,1.382h-.575l.4-2.582a.319.319,0,0,1,.312-.272h.264c.688,0,1.337,0,1.673.4a1.309,1.309,0,0,1,.183,1.074Zm-.44-3.61h-3.81a.533.533,0,0,0-.523.453L18.3,34.447a.321.321,0,0,0,.312.371h1.956a.371.371,0,0,0,.367-.315l.435-2.8a.536.536,0,0,1,.524-.452H23.1a3.928,3.928,0,0,0,4.338-3.662,3,3,0,0,0-.487-2.485,3.529,3.529,0,0,0-2.782-.986Z" transform="translate(1168.687 286.215)"></path><path class="c83" d="M6.316,27.728C6.108,29.11,5.064,29.11,4.054,29.11H3.474l.4-2.582a.323.323,0,0,1,.316-.272h.264c.688,0,1.337,0,1.673.4a1.3,1.3,0,0,1,.184,1.074Zm-.44-3.61H2.068a.531.531,0,0,0-.523.453L0,34.446a.321.321,0,0,0,.312.371H2.139a.531.531,0,0,0,.523-.452L3.078,31.7a.531.531,0,0,1,.523-.452H4.807a3.928,3.928,0,0,0,4.338-3.662,2.992,2.992,0,0,0-.49-2.485,3.506,3.506,0,0,0-2.778-.986Z" transform="translate(1157.852 286.214)"></path><path class="c83" d="M11.9,30.164a2.041,2.041,0,0,1-2.059,1.76,1.533,1.533,0,0,1-1.226-.5,1.581,1.581,0,0,1-.288-1.3A2.048,2.048,0,0,1,10.37,28.36a1.534,1.534,0,0,1,1.218.5,1.612,1.612,0,0,1,.308,1.3Zm2.54-3.591H12.616a.317.317,0,0,0-.312.272l-.082.513-.128-.187A2.579,2.579,0,0,0,9.941,26.4a4.208,4.208,0,0,0-4.07,3.708,3.494,3.494,0,0,0,.677,2.833,2.838,2.838,0,0,0,2.3.936A3.476,3.476,0,0,0,11.37,32.82l-.08.514a.321.321,0,0,0,.312.371h1.644a.534.534,0,0,0,.523-.453l.983-6.314a.322.322,0,0,0-.315-.371Z" transform="translate(1161.291 287.322)"></path><path class="b83" d="M30.188,30.164a2.035,2.035,0,0,1-2.057,1.76,1.528,1.528,0,0,1-1.224-.5,1.574,1.574,0,0,1-.282-1.3,2.047,2.047,0,0,1,2.043-1.771,1.534,1.534,0,0,1,1.218.5,1.612,1.612,0,0,1,.308,1.3Zm2.545-3.591H30.909a.316.316,0,0,0-.312.272l-.082.513-.128-.187a2.583,2.583,0,0,0-2.154-.772,4.214,4.214,0,0,0-4.073,3.708,3.516,3.516,0,0,0,.679,2.833,2.833,2.833,0,0,0,2.3.936,3.48,3.48,0,0,0,2.525-1.055l-.082.514a.322.322,0,0,0,.315.371h1.643a.533.533,0,0,0,.523-.453l.986-6.314a.321.321,0,0,0-.312-.371Z" transform="translate(1172.414 287.322)"></path><path class="c83" d="M20.94,26.518H19.107a.524.524,0,0,0-.438.233l-2.53,3.766L15.069,26.9a.533.533,0,0,0-.51-.382h-1.8a.319.319,0,0,0-.3.423l2.02,5.991-1.9,2.708a.322.322,0,0,0,.26.508h1.835a.529.529,0,0,0,.435-.23l6.1-8.9a.32.32,0,0,0-.261-.5" transform="translate(1165.207 287.38)"></path><path class="b83" d="M31.872,24.388,30.309,34.445a.321.321,0,0,0,.312.371H32.2a.528.528,0,0,0,.52-.452l1.548-9.876a.322.322,0,0,0-.315-.371H32.184a.32.32,0,0,0-.312.272" transform="translate(1175.424 286.215)"></path></g><g transform="translate(11.674 168.886)"><path class="c83" d="M13.846,4.077a.629.629,0,0,1,.381-.463.744.744,0,0,1,.3-.061h4.295a9.806,9.806,0,0,1,1.417.093c.124.018.244.039.362.062s.23.05.34.079l.163.044a4.348,4.348,0,0,1,.594.228,2.95,2.95,0,0,0-.741-2.848c-.818-.84-2.293-1.2-4.18-1.2H11.292a.764.764,0,0,0-.775.6L8.239,13.692a.441.441,0,0,0,.464.492h3.383L13.847,4.077" transform="translate(1122.093 305.99)"></path><path class="b83" d="M20.275,4.06a3.189,3.189,0,0,0-.664-2.848c-.731-.84-2.05-1.2-3.738-1.2h-4.9a.7.7,0,0,0-.693.6L8.238,13.692a.424.424,0,0,0,.415.492H11.68l-.208,1.339a.37.37,0,0,0,.363.43h2.55a.618.618,0,0,0,.608-.523l.024-.131.482-3.08.03-.168a.616.616,0,0,1,.606-.524h.382c2.471,0,4.406-1.015,4.971-3.95a3.385,3.385,0,0,0-.511-2.969,2.4,2.4,0,0,0-.7-.546" transform="translate(1122.879 305.99)"></path><path class="d83" d="M21.692,4.06a2.948,2.948,0,0,0-.742-2.848c-.817-.84-2.291-1.2-4.179-1.2H11.292a.764.764,0,0,0-.775.6L8.239,13.692a.441.441,0,0,0,.464.492h3.383l.85-4.873-.025.151a.758.758,0,0,1,.77-.6h1.607c3.156,0,5.629-1.16,6.352-4.515.022-.1.04-.2.056-.291" transform="translate(1122.093 305.99)"></path></g></g></svg>
+                                    </span>
+                                    <input type="radio" name="pay_type" class="frm__checkbox__control" data-radio="card"/>
+                                    <span class="frm__checkbox__checkmark"></span>
+                                </label>
+                                <label class="frm__checkbox">
+                                    <span class="info__payment">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="30" viewBox="0 0 100 30"><defs><style>.a84{fill:#fff;stroke:#e2e2e2;}.b84{fill:#f8991d;}.b84,.c84{fill-rule:evenodd;}.c84{fill:#333e47;}.d84{stroke:none;}.e84{fill:none;}</style></defs><g transform="translate(-1130 -517)"><g class="a84" transform="translate(1130 517)"><rect class="d84" width="100" height="30" rx="3"></rect><rect class="e84" x="0.5" y="0.5" width="99" height="29" rx="2.5"></rect></g><g transform="translate(752 262)"><path class="b84" d="M429.507,287.161a18.567,18.567,0,0,1-10.482,3.2,18.968,18.968,0,0,1-12.8-4.884c-.265-.24-.029-.567.291-.381a25.771,25.771,0,0,0,12.811,3.4,25.482,25.482,0,0,0,9.772-2c.479-.2.881.316.412.663Z" transform="translate(-9.244 -12.652)"></path><path class="b84" d="M459.021,285.128c-.363-.464-2.4-.22-3.31-.111-.276.033-.32-.208-.07-.384,1.622-1.139,4.281-.81,4.59-.429s-.082,3.05-1.6,4.322c-.234.2-.457.091-.353-.167.342-.855,1.108-2.768.745-3.232Z" transform="translate(-37.579 -11.965)"></path><path class="c84" d="M455.8,264.928v-1.107a.273.273,0,0,1,.281-.28h4.963a.276.276,0,0,1,.286.279v.95a1.557,1.557,0,0,1-.373.7l-2.571,3.67a5.512,5.512,0,0,1,2.831.608.507.507,0,0,1,.263.432v1.182c0,.163-.179.351-.366.253a5.716,5.716,0,0,0-5.243.01c-.173.092-.353-.094-.353-.257v-1.123a1.336,1.336,0,0,1,.185-.761l2.978-4.273h-2.593a.277.277,0,0,1-.287-.279Z" transform="translate(-37.601 -0.31)"></path><path class="c84" d="M411.294,271.651h-1.51a.285.285,0,0,1-.27-.255v-7.748a.285.285,0,0,1,.291-.279h1.406a.285.285,0,0,1,.274.26v1.011h.028a2.074,2.074,0,0,1,3.946,0,2.23,2.23,0,0,1,3.833-.587,4.116,4.116,0,0,1,.381,2.43v4.89a.285.285,0,0,1-.291.279h-1.508a.282.282,0,0,1-.271-.278v-4.108a9.887,9.887,0,0,0-.042-1.451.787.787,0,0,0-.887-.669,1,1,0,0,0-.9.636,4.683,4.683,0,0,0-.141,1.484v4.108a.285.285,0,0,1-.291.279h-1.508a.283.283,0,0,1-.271-.278l0-4.108c0-.864.141-2.135-.93-2.135s-1.043,1.239-1.043,2.135v4.108a.285.285,0,0,1-.291.279Z" transform="translate(-11.2 -0.118)"></path><path class="c84" d="M474.621,264.787c-1.113,0-1.184,1.516-1.184,2.462s-.014,2.968,1.17,2.968,1.226-1.631,1.226-2.625a7.161,7.161,0,0,0-.226-2.055.945.945,0,0,0-.987-.75Zm-.013-1.582c2.24,0,3.452,1.925,3.452,4.37,0,2.364-1.339,4.24-3.452,4.24-2.2,0-3.4-1.924-3.4-4.321,0-2.414,1.212-4.289,3.4-4.289Z" transform="translate(-46.61 -0.118)"></path><path class="c84" d="M491.713,271.651h-1.5a.283.283,0,0,1-.271-.278l0-7.751a.286.286,0,0,1,.29-.253h1.4a.287.287,0,0,1,.268.217v1.185h.029a2.053,2.053,0,0,1,2.057-1.565,1.978,1.978,0,0,1,1.761.913,4.927,4.927,0,0,1,.395,2.413v4.876a.286.286,0,0,1-.289.244h-1.513a.284.284,0,0,1-.269-.244V267.2c0-.848.1-2.088-.944-2.088a.988.988,0,0,0-.874.62,3.44,3.44,0,0,0-.239,1.468v4.172a.29.29,0,0,1-.294.279Z" transform="translate(-57.356 -0.118)"></path><path class="c84" d="M442.422,271.531a.311.311,0,0,1-.356.035,3.684,3.684,0,0,1-.866-1.006,2.991,2.991,0,0,1-2.489,1.1,2.143,2.143,0,0,1-2.259-2.353,2.564,2.564,0,0,1,1.61-2.467,10.434,10.434,0,0,1,2.839-.523v-.2a1.934,1.934,0,0,0-.184-1.095,1.01,1.01,0,0,0-.847-.392,1.15,1.15,0,0,0-1.214.907.32.32,0,0,1-.262.278l-1.463-.158a.266.266,0,0,1-.226-.316c.332-1.751,1.9-2.3,3.317-2.311h.112a3.4,3.4,0,0,1,2.222.752c.735.686.663,1.6.663,2.6v2.352a2.062,2.062,0,0,0,.57,1.4.285.285,0,0,1-.005.4c-.308.258-.856.734-1.157,1l0,0Zm-1.521-3.681a2.964,2.964,0,0,1-.283,1.6,1.227,1.227,0,0,1-1.045.686c-.579,0-.918-.441-.918-1.095,0-1.286,1.153-1.52,2.246-1.52v.327Z" transform="translate(-26.66 -0.017)"></path><path class="c84" d="M395.971,271.531a.311.311,0,0,1-.357.035,3.668,3.668,0,0,1-.865-1.006,2.992,2.992,0,0,1-2.489,1.1,2.143,2.143,0,0,1-2.26-2.353,2.564,2.564,0,0,1,1.61-2.467,10.431,10.431,0,0,1,2.838-.523v-.2a1.933,1.933,0,0,0-.183-1.095,1.009,1.009,0,0,0-.847-.392,1.149,1.149,0,0,0-1.213.907.32.32,0,0,1-.262.278l-1.463-.158a.266.266,0,0,1-.225-.316c.331-1.751,1.895-2.3,3.316-2.311h.112a3.4,3.4,0,0,1,2.222.752c.734.686.664,1.6.664,2.6v2.352a2.059,2.059,0,0,0,.57,1.4.286.286,0,0,1,0,.4c-.308.258-.857.734-1.158,1l0,0Zm-1.522-3.681a2.96,2.96,0,0,1-.282,1.6,1.226,1.226,0,0,1-1.045.686c-.579,0-.918-.441-.918-1.095,0-1.286,1.153-1.52,2.245-1.52v.327Z" transform="translate(0 -0.017)"></path><path class="c84" d="M552.328,274.643v-.569c0-.162.08-.274.249-.264a3.547,3.547,0,0,0,1.078.024,1.252,1.252,0,0,0,.886-.781c.248-.566.411-1.022.515-1.321l-3.141-7.78c-.053-.132-.069-.378.2-.378h1.1a.342.342,0,0,1,.342.263l2.277,6.32,2.174-6.32a.343.343,0,0,1,.341-.263h1.035c.262,0,.247.245.2.378l-3.116,8.023c-.4,1.069-.94,2.769-2.15,3.065a3.181,3.181,0,0,1-1.82-.087.353.353,0,0,1-.157-.309Z" transform="translate(-92.91 -0.329)"></path><path class="c84" d="M540.706,271.059a.265.265,0,0,1-.264.263h-.774a.3.3,0,0,1-.3-.263l-.078-.527a4.527,4.527,0,0,1-1.267.75,3.182,3.182,0,0,1-2.85-.134,2.271,2.271,0,0,1-.985-1.963,2.408,2.408,0,0,1,.611-1.671,3.1,3.1,0,0,1,2.359-.9,7.34,7.34,0,0,1,2.062.272v-1.06c0-1.078-.454-1.545-1.651-1.545a8.012,8.012,0,0,0-2.589.441.237.237,0,0,1-.247-.258v-.6a.376.376,0,0,1,.258-.328,7.81,7.81,0,0,1,2.729-.527c1.366,0,2.988.308,2.988,2.409v5.651Zm-1.488-1.548v-1.6a8.277,8.277,0,0,0-1.713-.2,1.979,1.979,0,0,0-1.4.448,1.321,1.321,0,0,0-.326.907,1.212,1.212,0,0,0,.491,1.064,2,2,0,0,0,1.6.073,3.512,3.512,0,0,0,1.347-.691Z" transform="translate(-82.753)"></path><path class="c84" d="M517.807,264.307c1.718,0,2.186,1.351,2.186,2.9a3.479,3.479,0,0,1-.722,2.5,1.954,1.954,0,0,1-1.535.507,3.725,3.725,0,0,1-1.994-.754V265.04a3.551,3.551,0,0,1,2.066-.732Zm-2.329,10.29H514.44a.264.264,0,0,1-.263-.263V263.528a.264.264,0,0,1,.263-.263h.794a.3.3,0,0,1,.3.263l.083.566a4.079,4.079,0,0,1,2.613-1.084c2.554,0,3.395,2.1,3.395,4.293,0,2.342-1.285,4.223-3.458,4.223a3.637,3.637,0,0,1-2.428-.924v3.731a.264.264,0,0,1-.264.263Z" transform="translate(-71.269 -0.006)"></path></g></g></svg>
+                                    </span>
+                                    <input type="radio" name="pay_type" class="frm__checkbox__control" data-radio="amazon"/>
+                                    <span class="frm__checkbox__checkmark"></span>
+                                </label>
+                                <label class="frm__checkbox">
+                                    <span class="info__payment">
+                                        <img src="../assets/images/apple_pay.svg" alt="apple pay">
+                                    </span>
+                                    <input type="radio" name="pay_type" class="frm__checkbox__control" data-radio="apple_pay"/>
+                                    <span class="frm__checkbox__checkmark"></span>
+                                </label>
+                                <label class="frm__checkbox">
+                                    <span class="info__payment">
+                                        <img src="../assets/images/google_pay.svg" alt="google pay">
+                                    </span>
+                                    <input type="radio" name="pay_type" class="frm__checkbox__control" data-radio="google_pay"/>
+                                    <span class="frm__checkbox__checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-term" class="stop-body-js modal modal--term">
+                <div class="modal__content">
+                    <div class="modal__header">
+                        <h2 class="modal__header__title"></h2>
+                        <span class="icon__close close-modal-js"></span>
+                    </div>
+                    <div class="modal__body overscroll">
+                        Welcome to drberg.com. By using this website, you agree to comply with the terms and conditions of drberg.com. These terms and conditions can change without notice by posting them to this website. If you do not agree then go elsewhere.
+                        <br><br>
+                        Disclaimer of Warranty<br>
+                        All content, materials, products, services and information on this website are given on an "as is" and "as available" basis, without warranties of any kind, either said or implied. Neither drberg.com nor its affiliates, nor the directors, officers, employees, agents, contractors, successors or assigns of each, shall be liable for any damages whatsoever arising out of or related to the use of, or inability to use, this website's information or any other website linked to this website. This waiver of liability applies to direct, indirect, incidental, consequential, special, punitive, exemplary or other damages you or others may suffer, as well as damages for lost profits, business interruption or the loss of data or information, even if drberg.com is notified in advance of the potential for any such damages and regardless of the form of action, whether in contract, tort, warranty, strict liability or otherwise.
+                        <br><br>
+                        Trademarks and Copyrights<br>
+                        You agree that all content appearing on the website including, but not limited to, code, trademarks, service marks, trade names, graphics, images, text, audio sections, icons, digital downloads, data compilations and computer software, are the sole property of drberg.com or its partners and suppliers, and are protected by United States and international copyright laws. All content on this website is the exclusive property of drberg.com and protected by United States and international copyright laws. All software used on this site is the property of drberg.com and protected by United States and international copyright laws. Users are granted permission to browse and use the drberg.com website for information only. Any other use, including and not limited to the reproduction, duplication, modification, distribution, sale, transmission, republication, removal, deletion, addition, framing, display, or performance of the content on this website or the exploitation in any other manner of any content of this website, in part or in whole, is strictly prohibited. Except as expressly authorized in writing, the use or misuse of any trademarks, service marks, trade names, logos, text, images, graphics, intellectual property or content from this website is strictly prohibited.
+                        Drberg.com does not grant, by implication or otherwise, any license or right to use any trademark, service mark, trade name or logo, or the content displayed on this site without the prior written consent of Dr. Berg personally. Registered and unregistered proprietary information is owned and held by drberg.com and therefore, you may be liable for infringement or misappropriation or other legal action if you misuse this website in any form either mentioned or unmentioned.
+                        <br><br>
+                        Third Party Websites<br>
+                        Any 3rd party websites are independent from drberg.com, and drberg.com has no control over, or responsibility with respect to, the information provided or activities undertaken by any such website. A link between drberg.com and another website further does not mean that drberg.com endorses that website. Linking to off-site pages is done at your own risk, requiring you to make your own independent decisions. Drberg.com expressly disclaims any responsibility or liability for any damage, loss, or injury arising out of the factors from 3rd party websites
+                        <br><br>
+                        User Restrictions<br>
+                        This website is for your personal, non-commercial only. You agree that you will not use this website for any purpose including, but not limited to, advertising, or selling products; to monitor, gather or copy content on this website by using any robot, "bot", spider, crawler, spyware, engine, device, software, extraction tool, or any other automatic device, utility, or manual process of any kind; to frame or utilize framing techniques to enclose any trademark or other proprietary information including, but not limited to, any images, text, or page layout; use any meta tags or any other "hidden text" utilizing Dr. Berg's name or any trademarks. You may not modify, reproduce, duplicate, copy, distribute, sell, resell, publish, license, visit or otherwise exploit this website.
+                        <br><br>
+                        Unlawful Conduct<br>
+                        You agree that you are prohibited from posting or transmitting to the drberg.com website any libelous, defamatory, obscene, inflammatory, pornographic or profane way. Drberg.com reserves the right to seek all remedies for violations of these terms and conditions.
+                        <br><br>
+                        Product Descriptions<br>
+                        Drberg.com attempts to be as accurate as possible. However, drberg.com does not claim that any content of this website is accurate, complete, reliable, current or error free.
+                        <br><br>
+                        Revisions<br>
+                        Drberg.com may, at its sole discretion, and with or without notice to you, make changes to, or discontinue, any aspect of this website including, without limitation, any content, products, services or prices offered through this website.
+                        <br><br>
+                        Consent<br>
+                        By accessing, browsing and/or using this website, you acknowledge that you have read, understood and agree to be bound by these terms and conditions.
+                        <br><br>
+                        Indemnity<br>
+                        You agree to hold harmless drberg.com, its affiliates, officers, employees, agents, licensors and licensees from any damages, liabilities, costs and expenses, including reasonable attorneys' fees, on account of any claim, suit, action, demand or proceeding made or brought against any such party, or on account of the investigation, defense or settlement thereof, arising with your use of this website.
+                        <br><br>
+                        Enforceability and Governing Law<br>
+                        Your use of drberg.com is governed with the laws of the state of Virginia, without regard to its law provisions. Any action against drberg.com arising from the use of the website and the provisions of these terms and conditions must be brought by you exclusively in the state or federal courts located in Virginia.
+                        <br><br>
+                        Your Representations<br>
+                        You state that you are 18 years of age or older.
+                        <br><br>
+                        Return/Refund Policy<br>
+                        Click here for our Shipping and Refund Policy
+                        <br><br>
+                        Customer Service<br>
+                        If you have any questions, please call us at 703-354-7336. We are open from 9:00am to 5:00pm Monday through Friday (EST).
+                        <br><br>
+                        *Disclaimer:<br>
+                        The dietary products may not have undergone evaluation and/or testing by the United States Food and Drug Administration. The recommendation of this program is not designed to treat, prevent or cure medical diseases. Before undertaking any recommendations or changes in diet or exercise within consult with your physician.
+                        Dr. Eric Berg DC is not a medical doctor - he is a Chiropractor. We do not diagnose or treat medical ailments or diseases. This program is designed for educational benefits only. Any Testimonials referred to in this Web site were volunteered by the makers without an offer of compensation. The results referred to in Testimonials may not be typical and others results may vary.
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn btn--add close-modal-js">Close</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col__xl__5">
+                <div class="order order--checkout">
+                    <div class="order__info">
+                        <h4 class="order__info__title order__info--flex">
+                            <label class="info__label">Order Summary</label>                            
+                            <span class="tooltip copy-text copy-text--checkout copy-step" data-type="order-summary">
+                                <span id="tooltip"></span>
+                                Copy
+                            </span>
+                        </h4>
+                        <div id="order-summary">
+                            <div class="order__info__cart order-summary">
+                                <p class="order__coupon__title order__coupon__title--cart toggle-chatapp-cart-js" onclick="toggleCoupon('product-js')">
+                                    Cart details
+                                </p>
+                                <div id="product-js" class="products overscroll show-cart-js"></div>
+                            </div>
+                            <p class="order__info__cost order__info--flex mb-2">
+                                <label class="info__label">Product cost:</label>
+                                <span class="info__label">$<span id="product-cost-js" class="total-cart-js"></span></span>
+                            </p>
+                            <p class="order__info__discount order__info--flex mb-2 total-discount-js">
+                                <label class="info__label">Discount (<span class="text-coupon-js"></span>)</label>
+                                <span class="info__label">
+                                    -$<span id="total-discount-js"></span>
+                                </span>
+                            </p>
+                            <p class="order__info__shipping order__info--flex mb-2">
+                                <span class="info__label__box">
+                                    <label class="info__label">Shipping</label>
+                                    <span class="info__label__shipping shipping-name-js"></span>
+                                </span>
+                                <span class="info__label shipping-order-js"><i>Not yet calculated</i></span>
+                            </p>
+                            <p class="order__info__subtotal order__info--flex order__info__subtotal--hr">
+                                <label class="info__label">Subtotal</label>
+                                <span class="info__price">$<span id="subtotal-cart-js"></span></span>
+                                <input type="hidden" name="hidden-subtotal" id="hidden-subtotal">
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <div class="alert fs-14 alert-js" style="display: none;">
+                        Congratulations, your order qualified for free shipping (Us only)
+                        <span class="alert__close" onclick="closeAlert('this')"></span>
+                    </div> -->
+                    <div class="order__coupon order__coupon--checkout">
+                        <p class="order__coupon__title d-flex justify-content-between align-items-center">
+                            <span>Coupon code</span>
+                            <span class="tooltip copy-text copy-step" data-type="shop-cart">
+                                <span id="tooltip"></span>
+                                Copy
+                            </span>
+                            <!-- <span class="arrow-hidden" onclick="toggleCoupon('coupon-js')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13.859" height="8.344" viewBox="0 0 13.859 8.344"><defs><style>.a25{fill:none;stroke:#707070;stroke-linecap:round;stroke-width:2px;}</style></defs><path class="a25" d="M6.052,10.077l5.515,5.515,5.515-5.515" transform="translate(-4.638 -8.662)"></path></svg>
+                            </span> -->
+                        </p>
+                        <div id="coupon-js" class="coupon active">
+                            <!-- <div id="offer-js" class="coupon__offer">
+                                <p class="coupon__offer__valid">No offers available at this time.</p>
+                                <button class="btn btn--blue offer-js" disabled>Apply Offer</button>
+                                <a class="coupon__offer__link offer-link-js" href="#" data-id="offer-js">I have another coupon code</a>
+                            </div> -->
+                            <div id="discount-js">
+                                <div class="alert alert--coupon alert--coupon--checkout alert-checkout-js mb-3" style="display: none;">
+                                    Your coupon was successfully applied.                                    
+                                </div>
+                                <div class="alert alert--valid alert--danger alert--danger--checkout  alert-checkout-js mb-3" style="display: none;">
+                                    The coupon code isn't valid. Verify the code and try again.                                    
+                                </div>
+                                <div class="frm__group">
+                                    <input type="text" name="coupon_code" class="frm__control discount-group-js" placeholder="COUPON CODE"/>
+                                    <p class="frm__error">This is a required field.</p>
+                                </div>
+                                <button class="btn btn--blue discount-js">Apply Discount</button>
+                                <!-- <a class="coupon__offer__link offer-link-js" href="#" data-id="discount-js">View my discounts</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="shop-cart" style="display: none;">
+                        <h2 class="order__secondary sales-coupon">Coupon Code</h2>
+                        <div class="alert alert--valid alert--danger alert--danger--checkout  alert-checkout-js mb-3" style="display: none;">
+                            The coupon code isn't valid. Verify the code and try again.
+                        </div>
+                        <div class="frm frm__group">
+                            <input type="text" name="coupon_code" class="frm__control discount-group-js" placeholder="ENTER DISCOUNT CODE"/>
+                            <p class="frm__error">This is a required field.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer footer--checkout">
+        <div class="container container--fixed">
+            <div class="footer__policy">
+                <p class="footer__p">Copyright © 2019 DrBerg.com. All Rights Reserved</p>
+                <p class="footer__p">
+                    Disclaimer: The dietary and other substances, and/or materials, equipment or devices discussed on this site may not have undergone evaluation and/or testing by the United States Food and Drug Administration or like agency of any other country. Risks that might be determined by such testing are unknown. <a href="#" class="footer__p_link">Click here</a> to read the full disclaimer text.
+                </p>
+                <p class="footer__p">
+                    These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure or prevent any disease. Information on this site is provided for informational purposes only, it is not meant to substitute medical advice provided by your physician or any other medical professional. You should not use the information contained on this site for diagnosing or treating a health problem, disease, or prescribing any medication. Please read product label before use. Best results are only achieved when combined with diet and exercise program. Results not typical for any or all claims.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+    <script>
+        /*Hash Char Encode */
+        window.addEventListener('load', encodeInfo);
+        function encodeInfo(){
+            let hashChar = document.querySelectorAll('.hashcode');
+            for(let i = 0; i < hashChar.length; i++){
+                let hash = hashChar[i].value;
+                hashChar[i].value = hash.replace(/[\sa-zA-Z0-9]/g, '*');
+            }
+        }
+        /*Open modal*/
+        let showModal = document.querySelectorAll('.modal-js');
+        for(let i = 0; i < showModal.length; i++){
+            showModal[i].addEventListener('click', function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                let modal = this.getAttribute('data-modal');
+                document.body.classList.add('overlay');
+                document.getElementById(modal).classList.add('modal--show');
+            });
+        }
+        /*Close modal*/
+        let closeModal = document.querySelectorAll('.close-modal-js');
+        for(let i = 0; i < closeModal.length; i++){
+            closeModal[i].addEventListener('click', function(){
+                this.parentElement.parentElement.parentElement.classList.remove('modal--show');
+                document.body.classList.remove('overlay');
+            })
+        } 
+        /*Close Alert Checkout*/
+        let closeAlertCheckout = document.querySelectorAll('.alert-checkout-js');
+        for(let i = 0; i < closeAlertCheckout.length; i++){
+            closeAlertCheckout[i].addEventListener('click', function(){
+                this.style.display = 'none';
+            })
+        }  
+        /*Input change*/
+        document.getElementById('credit_number').addEventListener('input', function (e) {
+            e.target.value = e.target.value.replace(/[^\dA-Z]/g, '').replace(/(.{4})/g, '$1 ').trim();
+        });
+        let removeErrors = document.querySelectorAll('.remove-error-js');
+        for(let i = 0; i < removeErrors.length; i++){
+            removeErrors[i].addEventListener('keyup', function(){
+                if(this.value === ''){
+                    this.parentElement.nextElementSibling.classList.add('frm__error--block');
+                }else{
+                    this.parentElement.nextElementSibling.classList.remove('frm__error--block');
+                }
+            });
+        }
+        let removeChangeErrors = document.querySelectorAll('.remove-change-js');
+        for(let i = 0; i < removeChangeErrors.length; i++){
+            removeChangeErrors[i].addEventListener('change', function(){
+                if(this.value === ''){
+                    this.parentElement.parentElement.nextElementSibling.classList.add('frm__error--block');
+                }else if(this.checked){
+                    this.parentElement.nextElementSibling.classList.remove('frm__error--block');
+                }else{
+                    this.parentElement.parentElement.nextElementSibling.classList.remove('frm__error--block');
+                }
+            });
+        }
+        /*Search input countries*/
+        function searchHometown(ob){
+            var filter, ul, li, a, i, txtValue;
+            filter = ob.value.toUpperCase();
+            ul = ob.nextElementSibling;
+            li = ul.querySelectorAll(".option");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+        /*Change countries*/
+        function getHometown(){
+            let changeHometown = document.querySelectorAll('.option');        
+            for(let i = 0; i < changeHometown.length; i++){
+                changeHometown[i].addEventListener('click', function(e){
+                    e.stopPropagation();
+                    let id = this.getAttribute('data-id');
+                    let text = this.textContent;
+                    let type = this.getAttribute('data-type');
+                    let activeState = this.getAttribute('data-state');
+                    document.querySelector('.' + type).nextElementSibling.style.display = 'none';
+                    document.querySelector('.' + type).nextElementSibling.firstElementChild.setAttribute('data-value', id);
+                    document.querySelector('.' + type).nextElementSibling.firstElementChild.setAttribute('data-name', text);
+                    document.querySelector('.' + type).innerText = text;
+                    document.getElementById('region').lastElementChild.classList.remove('frm__error--block');
+                    if(activeState != null){
+                        document.getElementById('state').style.display = 'block';
+                        document.getElementById('region').style.display = 'none';
+                        document.querySelector('.region').nextElementSibling.firstElementChild.setAttribute('data-value',1);
+                        document.querySelector('.region').nextElementSibling.firstElementChild.setAttribute('data-name','');
+                    }else{
+                        document.getElementById('state').style.display = 'none';
+                        document.getElementById('region').style.display = 'block';
+                        if(id == 'CA'){
+                            fetchRegion('canada');
+                            document.getElementById('region').firstElementChild.firstElementChild.innerText = "Select region";
+                            document.querySelector('.region').nextElementSibling.firstElementChild.setAttribute('data-value','');
+                        }else if(id == 'US'){
+                            fetchRegion('united');
+                            document.getElementById('region').firstElementChild.firstElementChild.innerText = "Select region";
+                            document.querySelector('.region').nextElementSibling.firstElementChild.setAttribute('data-value','');
+                        }
+                    }
+                });
+            }
+        }
+        fetch('../json/countries.json')
+        .then(response => response.json())
+        .then(data => {  
+            let html = '<li class="active">All countries</li>';        
+            for(let i = 0; i < data.length; i++){
+                html += '<li class="option" data-state="active" data-type="country" data-id="'+data[i].code+'"><a>'+data[i].name+'</a></li>';
+            }
+            document.querySelector('.list-countries-js').innerHTML = html;
+            getHometown();
+        });
+        function fetchRegion(region){
+            fetch('../json/regions-'+region+'.json')
+            .then(response => response.json())
+            .then(data => {    
+                let html = '';        
+                for(let i = 0; i < data.length; i++){
+                    html += '<li class="option" data-type="region" data-key="'+i+'" data-id="'+data[i].code+'"><a>'+data[i].name+'</a></li>';
+                }
+                document.querySelector('.list-regions-js').innerHTML = html;
+                getHometown();
+            });
+        }
+        fetchRegion('united');
+        /*Show select countries*/
+        let dropHometown = document.querySelectorAll('.hometown-js');
+        for(let i = 0; i < dropHometown.length; i++){
+            dropHometown[i].addEventListener('click', function(e){
+                e.stopPropagation();
+                this.blur();
+                let active = this.getAttribute('data-active');
+                document.querySelector('.' + active).style.display = 'none';
+                if(this.nextElementSibling.style.display == 'block'){
+                    this.nextElementSibling.style.display = 'none';
+                }else{
+                    this.nextElementSibling.style.display = 'block';                   
+                }
+            })
+        }
+        /*Focus Input*/
+        let focusInput = document.querySelectorAll('.label-js');
+        for(let i = 0; i < focusInput.length; i++){
+            focusInput[i].addEventListener('keyup', function(){
+                if(this.value === ''){
+                    this.classList.remove('frm__label--focus');
+                    this.classList.remove('frm__error__border');
+                    this.nextElementSibling.nextElementSibling.innerText = '';
+                    if(!(this.getAttribute('name') == 'address1' || this.getAttribute('name') == 'state' || this.getAttribute('name') == 'add_address')){
+                        this.classList.add('frm__error__border');
+                        this.nextElementSibling.nextElementSibling.classList.add('frm__error--block');
+                        this.nextElementSibling.nextElementSibling.innerText = 'This is a required field.';
+                    }
+                }else if((this.getAttribute('name') === 'first_name' || this.getAttribute('name') === 'last_name') && this.value.length === 1){
+                    this.classList.add('frm__label--focus');
+                    this.classList.add('frm__error__border');
+                    this.nextElementSibling.nextElementSibling.innerText = 'Please enter more or equal than 2 symbols.'
+                    this.nextElementSibling.nextElementSibling.classList.add('frm__error--block');
+                }else if((this.getAttribute('name') === 'first_name' || this.getAttribute('name') === 'last_name' || this.getAttribute('name') === 'phone_number') && this.value.length > 32){
+                    this.classList.add('frm__label--focus');
+                    this.classList.add('frm__error__border');
+                    this.nextElementSibling.nextElementSibling.innerText = 'Please enter less or equal than 32 symbols.'
+                    this.nextElementSibling.nextElementSibling.classList.add('frm__error--block');                 
+                }else if((this.getAttribute('name') === 'address' || this.getAttribute('name') === 'address1' || this.getAttribute('name') === 'add_address') && this.value.length > 255){
+                    this.classList.add('frm__label--focus');
+                    this.classList.add('frm__error__border');
+                    this.nextElementSibling.nextElementSibling.innerText = 'Please enter less or equal than 255 symbols.'
+                    this.nextElementSibling.nextElementSibling.classList.add('frm__error--block');                 
+                }else if(this.getAttribute('name') === 'city' && this.value.length > 25){
+                    this.classList.add('frm__label--focus');
+                    this.classList.add('frm__error__border');
+                    this.nextElementSibling.nextElementSibling.innerText = 'Please enter less or equal than 25 symbols.'
+                    this.nextElementSibling.nextElementSibling.classList.add('frm__error--block');                 
+                }else if(this.getAttribute('name') === 'zip' && this.value.length > 10){
+                    this.classList.add('frm__label--focus');
+                    this.classList.add('frm__error__border');
+                    this.nextElementSibling.nextElementSibling.innerText = 'Please enter less or equal than 10 symbols.'
+                    this.nextElementSibling.nextElementSibling.classList.add('frm__error--block');                 
+                }else{
+                    this.classList.add('frm__label--focus');
+                    if(!(this.getAttribute('name') == 'address1' || this.getAttribute('name') == 'state' || this.getAttribute('name') == 'add_address')){
+                        this.classList.remove('frm__error__border');
+                        this.nextElementSibling.nextElementSibling.classList.remove('frm__error--block');
+                    }                    
+                }
+            });
+        }
+        /*Active shipping*/
+        let activeShipping = document.querySelectorAll('.shipping-js');
+        for (var i = 0; i < activeShipping.length; i++) {
+            activeShipping[i].classList.remove('frm__shipping--active');
+            activeShipping[i].onclick = function (event) {
+                for (var i = 0; i < activeShipping.length; i++) {
+                    activeShipping[i].classList.remove('frm__shipping--active');
+                }
+                this.classList.add("frm__shipping--active");
+                let hiddenSubTotal = document.getElementById('hidden-subtotal').value;
+                document.getElementById("type-shipping-js").nextElementSibling.classList.remove('frm__error--block');
+                let shippingMethod = this.getAttribute('data-shipping-method');
+                let strShippingMethod = shippingMethod.split(",");                         
+                document.getElementById('subtotal-cart-js').innerText = Number(parseFloat(hiddenSubTotal) + parseFloat(strShippingMethod[2])).toFixed(2);
+                document.getElementById('total-place-js').innerText = Number(parseFloat(hiddenSubTotal) + parseFloat(strShippingMethod[2])).toFixed(2);
+                document.querySelector('.shipping-name-js').innerHTML = strShippingMethod[1] +'-'+ strShippingMethod[0];
+                document.querySelector('.shipping-order-js').innerHTML = '$' + strShippingMethod[2];
+                document.getElementById("type-shipping-js").setAttribute('value', shippingMethod);
+                localStorage.setItem('shipping-method', shippingMethod);
+            }
+        }    
+    </script>
+    <script src="../assets/js/validate-checkout.js"></script>
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/cart-checkout.js"></script>
+</body>
+</html>

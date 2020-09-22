@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./../assets/images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"></noscript>
+    <link rel="stylesheet" href="./../assets/css/style.min.css" />
+</head>
+<body>
+    <main class="container container--popup container--popup-chatapp">
+        <div class="accordion accordion--checkout">
+            <div id="step2" class="card card--checkout active">
+                <div class="card__head card__head--chatapp">
+                    <h2 class="card__title d-flex align-items-center">
+                        Shipping and billing information
+                    </h2>
+                </div>
+                <div class="collapse card__body card__body--chatapp">
+                    <div class="card__body__frm">
+                        <h3 class="card__body__title">Ship to:</h3>
+                        <form action="" method="POST" class="frm frm--checkout submit-js" name="frm_step2">
+                            <h4 class="card__body__title card__body--title">Contact person</h4>
+                            <div class="row row--fixed">
+                                <div class="col__sm__4 col--fixed">
+                                    <div class="frm__group">
+                                        <input type="text" name="first_name" class="label-js frm__control frm__control--lg"/>
+                                        <label for="first_name" class="frm__label">First Name</label>
+                                        <p class="first_name frm__error">This is a required field.</p>
+                                    </div>
+                                </div>
+                                <div class="col__sm__4 col--fixed">
+                                    <div class="frm__group">
+                                        <input type="text" name="last_name" class="label-js frm__control frm__control--lg"/>
+                                        <label for="last_name" class="frm__label">Last Name</label>
+                                        <p class="last_name frm__error">This is a required field.</p>
+                                    </div>
+                                </div>
+                                <div class="col__sm__4 col--fixed">
+                                    <div class="frm__group">
+                                        <input type="text" name="phone_number" class="label-js frm__control frm__control--lg"/>
+                                        <label for="phone_number" class="frm__label">Phone Number</label>
+                                        <p class="phone_number frm__error">This is a required field.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="card__body__title card__body--title">Delivery address</h4>
+                            <div class="row row--fixed">
+                                <div class="col__sm__4 col--fixed">
+                                    <div class="frm__group mb-10">
+                                        <input type="text" name="address" class="label-js frm__control frm__control--lg"/>
+                                        <label for="address" class="frm__label">Address</label>
+                                        <p class="address frm__error">This is a required field.</p>
+                                    </div>                                            
+                                </div>
+                                <div class="col__sm__4 col--fixed">
+                                    <div class="frm__group mb-10">
+                                        <input type="text" name="city" class="label-js frm__control frm__control--lg"/>
+                                        <label for="city" class="frm__label">City</label>
+                                        <p class="city frm__error">This is a required field.</p>
+                                    </div>                                            
+                                </div>
+                                <div class="col__sm__4 col--fixed">
+                                    <div class="frm__group mb-10">
+                                        <input type="text" name="zip" class="label-js frm__control frm__control--lg"/>
+                                        <label for="zip" class="frm__label">Zip</label>
+                                        <p class="zip frm__error">This is a required field.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row--fixed">
+                                <div class="frm__group col__sm__6 col--fixed">
+                                    <div class="frm__control frm__control--option">
+                                        <span class="arrow arrow--hometown hometown-js country" tabindex="0" data-active="region-js">
+                                            United States
+                                        </span>
+                                        <div class="frm__dropdown country-js stop-body-js">
+                                            <input type="text" onkeyup="searchHometown(this)" name="countries" data-value="US" data-name="United States" class="search-input-js frm__control  frm__dropdown__search">
+                                            <ul class="frm__dropdown__hometown overscroll">
+                                                <li class="active">Suggested</li>
+                                                <li data-id="CA" data-type="country" class="option active__suggest"><a>Canada</a></li>
+                                                <li data-id="US" data-type="country" class="option active__suggest"><a>United States</a></li>
+                                                <li><hr class="hr"/></li>
+                                                <li class="list-countries-js active">All countries</li>
+                                            </ul>
+                                        </div>  
+                                    </div>                                          
+                                </div>
+                                <div class="col__sm__6 col--fixed">
+                                    <div id="state" class="frm__group frm__group--none">
+                                        <input type="text" name="state" class="label-js frm__control frm__control--lg"/>
+                                        <label for="state" class="frm__label">State</label>
+                                    </div>
+                                    <div id="region" class="frm__group">
+                                        <div class="frm__control frm__control--option">
+                                            <span class="arrow arrow--hometown hometown-js region" data-active="country-js" tabindex="0">Select region</span>
+                                            <div class="frm__dropdown region-js stop-body-js">
+                                                <input type="text" onkeyup="searchHometown(this)" name="regions" data-value="" data-name="" class="search-input-js frm__control  frm__dropdown__search">
+                                                <ul class="frm__dropdown__hometown overscroll">
+                                                    <li class="list-regions-js"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p class="regions frm__error">This is a required field.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="card__body__title card__body--title">Add a label to this address</h4>
+                            <div class="row row--fixed">
+                                <div class="col__sm__4 col--fixed">
+                                    <div class="frm__group">
+                                        <input type="text" name="add_address" class="label-js frm__control frm__control--lg"/>
+                                        <label for="add_address" class="frm__label">Ext: Home, Office ...</label>
+                                        <p class="frm__error"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="frm__group--billing">
+                                <label class="frm__checkbox frm__checkbox--checkout" onchange="toggleCoupon('condition-js')">
+                                    My billing address is different from shipping address
+                                    <input type="checkbox" name="billing-address" class="frm__checkbox__control checkbox-js"/>
+                                    <span class="frm__checkbox__checkmark frm__checkbox__checkmark--checkout"></span>
+                                </label>
+                                <div class="frm__condition" id="condition-js">
+                                    If your shipping address is different then billing address, please call our office to place your order. 703-354-7336
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn--checkout">Confirm Shipping and billing information</button>                                    
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        /*Search input countries*/
+        function searchHometown(ob){
+            var filter, ul, li, a, i, txtValue;
+            filter = ob.value.toUpperCase();
+            ul = ob.nextElementSibling;
+            li = ul.querySelectorAll(".option");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+        /*Change countries*/
+        function getHometown(){
+            let changeHometown = document.querySelectorAll('.option');        
+            for(let i = 0; i < changeHometown.length; i++){
+                changeHometown[i].addEventListener('click', function(e){
+                    e.stopPropagation();
+                    let id = this.getAttribute('data-id');
+                    let text = this.textContent;
+                    let type = this.getAttribute('data-type');
+                    let activeState = this.getAttribute('data-state');
+                    document.querySelector('.' + type).nextElementSibling.style.display = 'none';
+                    document.querySelector('.' + type).nextElementSibling.firstElementChild.setAttribute('data-value', id);
+                    document.querySelector('.' + type).nextElementSibling.firstElementChild.setAttribute('data-name', text);
+                    document.querySelector('.' + type).innerText = text;
+                    document.getElementById('region').lastElementChild.classList.remove('frm__error--block');
+                    if(activeState != null){
+                        document.getElementById('state').style.display = 'block';
+                        document.getElementById('region').style.display = 'none';
+                        document.querySelector('.region').nextElementSibling.firstElementChild.setAttribute('data-value',1);
+                        document.querySelector('.region').nextElementSibling.firstElementChild.setAttribute('data-name','');
+                    }else{
+                        document.getElementById('state').style.display = 'none';
+                        document.getElementById('region').style.display = 'block';
+                        if(id == 'CA'){
+                            fetchRegion('canada');
+                            document.getElementById('region').firstElementChild.firstElementChild.innerText = "Select region";
+                            document.querySelector('.region').nextElementSibling.firstElementChild.setAttribute('data-value','');
+                        }else if(id == 'US'){
+                            fetchRegion('united');
+                            document.getElementById('region').firstElementChild.firstElementChild.innerText = "Select region";
+                            document.querySelector('.region').nextElementSibling.firstElementChild.setAttribute('data-value','');
+                        }
+                    }
+                });
+            }
+        }
+        fetch('../json/countries.json')
+        .then(response => response.json())
+        .then(data => {  
+            let html = '<li class="active">All countries</li>';        
+            for(let i = 0; i < data.length; i++){
+                html += '<li class="option" data-state="active" data-type="country" data-id="'+data[i].code+'"><a>'+data[i].name+'</a></li>';
+            }
+            document.querySelector('.list-countries-js').innerHTML = html;
+            getHometown();
+        });
+        function fetchRegion(region){
+            fetch('../json/regions-'+region+'.json')
+            .then(response => response.json())
+            .then(data => {    
+                let html = '';        
+                for(let i = 0; i < data.length; i++){
+                    html += '<li class="option" data-type="region" data-key="'+i+'" data-id="'+data[i].code+'"><a>'+data[i].name+'</a></li>';
+                }
+                document.querySelector('.list-regions-js').innerHTML = html;
+                getHometown();
+            });
+        }
+        fetchRegion('united');
+        /*Show select countries*/
+        let dropHometown = document.querySelectorAll('.hometown-js');
+        for(let i = 0; i < dropHometown.length; i++){
+            dropHometown[i].addEventListener('click', function(e){
+                e.stopPropagation();
+                this.blur();
+                let active = this.getAttribute('data-active');
+                document.querySelector('.' + active).style.display = 'none';
+                if(this.nextElementSibling.style.display == 'block'){
+                    this.nextElementSibling.style.display = 'none';
+                }else{
+                    this.nextElementSibling.style.display = 'block';                   
+                }
+            })
+        }
+        /*Focus Input*/
+        let focusInput = document.querySelectorAll('.label-js');
+        for(let i = 0; i < focusInput.length; i++){
+            focusInput[i].addEventListener('keyup', function(){
+                if(this.value === ''){
+                    this.classList.remove('frm__label--focus');
+                    this.classList.remove('frm__error__border');
+                    this.nextElementSibling.nextElementSibling.innerText = '';
+                    if(!(this.getAttribute('name') == 'address1' || this.getAttribute('name') == 'state' || this.getAttribute('name') == 'add_address')){
+                        this.classList.add('frm__error__border');
+                        this.nextElementSibling.nextElementSibling.classList.add('frm__error--block');
+                        this.nextElementSibling.nextElementSibling.innerText = 'This is a required field.';
+                    }
+                }else if((this.getAttribute('name') === 'first_name' || this.getAttribute('name') === 'last_name') && this.value.length === 1){
+                    this.classList.add('frm__label--focus');
+                    this.classList.add('frm__error__border');
+                    this.nextElementSibling.nextElementSibling.innerText = 'Please enter more or equal than 2 symbols.'
+                    this.nextElementSibling.nextElementSibling.classList.add('frm__error--block');
+                }else if((this.getAttribute('name') === 'first_name' || this.getAttribute('name') === 'last_name' || this.getAttribute('name') === 'phone_number') && this.value.length > 32){
+                    this.classList.add('frm__label--focus');
+                    this.classList.add('frm__error__border');
+                    this.nextElementSibling.nextElementSibling.innerText = 'Please enter less or equal than 32 symbols.'
+                    this.nextElementSibling.nextElementSibling.classList.add('frm__error--block');                 
+                }else if((this.getAttribute('name') === 'address' || this.getAttribute('name') === 'address1' || this.getAttribute('name') === 'add_address') && this.value.length > 255){
+                    this.classList.add('frm__label--focus');
+                    this.classList.add('frm__error__border');
+                    this.nextElementSibling.nextElementSibling.innerText = 'Please enter less or equal than 255 symbols.'
+                    this.nextElementSibling.nextElementSibling.classList.add('frm__error--block');                 
+                }else if(this.getAttribute('name') === 'city' && this.value.length > 25){
+                    this.classList.add('frm__label--focus');
+                    this.classList.add('frm__error__border');
+                    this.nextElementSibling.nextElementSibling.innerText = 'Please enter less or equal than 25 symbols.'
+                    this.nextElementSibling.nextElementSibling.classList.add('frm__error--block');                 
+                }else if(this.getAttribute('name') === 'zip' && this.value.length > 10){
+                    this.classList.add('frm__label--focus');
+                    this.classList.add('frm__error__border');
+                    this.nextElementSibling.nextElementSibling.innerText = 'Please enter less or equal than 10 symbols.'
+                    this.nextElementSibling.nextElementSibling.classList.add('frm__error--block');                 
+                }else{
+                    this.classList.add('frm__label--focus');
+                    if(!(this.getAttribute('name') == 'address1' || this.getAttribute('name') == 'state' || this.getAttribute('name') == 'add_address')){
+                        this.classList.remove('frm__error__border');
+                        this.nextElementSibling.nextElementSibling.classList.remove('frm__error--block');
+                    }                    
+                }
+            });
+        }    
+        function validateShippingBilling(form){
+            let fields = ["first_name", "last_name", "phone_number", "address", "city", "zip"];
+            fields.forEach((element) => {
+                if(form[element].value === ''){
+                    document.querySelector('.' + element).classList.add('frm__error--block');
+                    document.querySelector('.' + element).previousElementSibling.previousElementSibling.classList.add('frm__error__border');            
+                    return false;
+                }
+            });
+            let fn = form['first_name'];
+            if(fn.value === ''){
+                fn.classList.add('frm__error__border');
+                fn.nextElementSibling.nextElementSibling.classList.add('frm__error--block');
+                return false;
+            }
+            if(fn.value.length === 1){
+                fn.classList.add('frm__error__border');
+                fn.nextElementSibling.nextElementSibling.innerText = 'Please enter more or equal than 2 symbols.'
+                fn.nextElementSibling.nextElementSibling.classList.add('frm__error--block');
+                return false;
+            }
+            let ln = form['last_name'];
+            if(ln.value === ''){
+                ln.classList.add('frm__error__border');
+                ln.nextElementSibling.nextElementSibling.classList.add('frm__error--block');
+                return false;
+            }
+            if(ln.value.length === 1){
+                ln.classList.add('frm__error__border');
+                ln.nextElementSibling.nextElementSibling.innerText = 'Please enter more or equal than 2 symbols.'
+                ln.nextElementSibling.nextElementSibling.classList.add('frm__error--block');
+                return false;
+            }
+            let pn = form['phone_number'];
+            if(pn.value === ''){
+                pn.classList.add('frm__error__border');
+                pn.nextElementSibling.nextElementSibling.classList.add('frm__error--block');
+                return false;
+            }
+            let ad = form['address'];
+            if(ad.value === ''){
+                ad.classList.add('frm__error__border');
+                ad.nextElementSibling.nextElementSibling.classList.add('frm__error--block');
+                return false;
+            }
+            let ct = form['city'];
+            if(ct.value === ''){
+                ct.classList.add('frm__error__border');
+                ct.nextElementSibling.nextElementSibling.classList.add('frm__error--block');
+                return false;
+            }
+            let zp = form['zip'];
+            if(zp.value === ''){
+                zp.classList.add('frm__error__border');
+                zp.nextElementSibling.nextElementSibling.classList.add('frm__error--block');
+                return false;
+            }
+            let st = form['regions'];
+            if(st.getAttribute('data-value') === ''){
+                st.parentElement.parentElement.nextElementSibling.classList.add('frm__error--block');
+                return false;
+            }
+            return true;
+        }
+        /*Submit form*/
+        document.querySelector('.submit-js').addEventListener("submit", function (e) {
+            e.preventDefault();
+            if(validateShippingBilling(this)){
+                if (window.opener != null && !window.opener.closed) {                                        
+                    let office = this['add_address'].value;
+                    let fullNamePhone = this['first_name'].value +'&nbsp;'+ this['last_name'].value + ',&nbsp;' + this['phone_number'].value + ',';
+                    let state = this['state'].value;
+                    let region = this['regions'].getAttribute('data-name') == '' ? state : this['regions'].getAttribute('data-name');
+                    let fullAddress = this['address'].value + '&nbsp;' + this['city'].value +',&nbsp;'+region+'&nbsp;'+ this['zip'].value + '&nbsp;' + this['countries'].getAttribute('data-name');
+                    let info = '<div class="chatapp__order__body chatapp__order__body--bill">'
+                                    + '<h2 class="order__secondary">Shipping and billing information</h2>'
+                                    + '<h3 class="card__body__title">Ship to:</h3>'
+                                    + '<h4 class="card__body__title card__body--title">'+office+'</h4>'
+                                    + '<p class="card__body__text">'+fullNamePhone+'<br/>'+fullAddress+'</p>'
+                                    + '<h3 class="card__body__title">Bill to:</h3>'
+                                    + '<h4 class="card__body__title card__body--title">'+office+'</h4>'
+                                    + '<p class="card__body__text">'+fullNamePhone+'<br/>'+fullAddress+'</p>'
+                                + '</div>'
+                                +  '<div class="chatapp__order__foot chatapp-billing-close-js"></div>';
+                    let content = '<div class="chatapp__order__head confirm-shipping-billing">'
+                                        + '<h4 class="order__heading order__heading--confirm">Confirmed Information</h4>'
+                                    + '</div>'
+                                    + '<div class="chatapp__order__body chatapp__order__body--bill">'
+                                        + '<h2 class="order__secondary">Shipping and billing information</h2>'
+                                        + '<h3 class="card__body__title">Ship to:</h3>'
+                                        + '<h4 class="card__body__title card__body--title">'+office+'</h4>'
+                                        + '<p class="card__body__text">'+fullNamePhone+'<br/>'+fullAddress+'</p>'
+                                        + '<h3 class="card__body__title">Bill to:</h3>'
+                                        + '<h4 class="card__body__title card__body--title">'+office+'</h4>'
+                                        + '<p class="card__body__text">'+fullNamePhone+'<br/>'+fullAddress+'</p>'
+                                    + '</div>';     
+                    window.opener.document.querySelector('.chatapp-change-info-js').innerHTML = info;                                        
+                    window.opener.receivedPopup(content);              
+                }
+                window.close();
+            }
+        });
+    </script>
+</body>
+</html>

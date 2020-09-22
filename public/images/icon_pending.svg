@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="17" viewBox="0 0 15 17">
+  <g id="Group_19931" data-name="Group 19931" transform="translate(-1191.689 -896.807)">
+    <rect id="Rectangle_9608" data-name="Rectangle 9608" width="15" height="2" rx="1" transform="translate(1191.689 896.807)" fill="#fff"/>
+    <rect id="Rectangle_9611" data-name="Rectangle 9611" width="15" height="2" rx="1" transform="translate(1191.689 911.807)" fill="#fff"/>
+    <g id="Group_19828" data-name="Group 19828">
+      <path id="Rectangle_9610" data-name="Rectangle 9610" d="M0,0H11a0,0,0,0,1,0,0V2.5A5.5,5.5,0,0,1,5.5,8h0A5.5,5.5,0,0,1,0,2.5V0A0,0,0,0,1,0,0Z" transform="translate(1193.689 897.807)" fill="#fff"/>
+      <path id="Rectangle_9612" data-name="Rectangle 9612" d="M5.5,0h0A5.5,5.5,0,0,1,11,5.5V8a0,0,0,0,1,0,0H0A0,0,0,0,1,0,8V5.5A5.5,5.5,0,0,1,5.5,0Z" transform="translate(1193.689 904.807)" fill="#fff"/>
+      <path id="Rectangle_9613" data-name="Rectangle 9613" d="M0,0H7A0,0,0,0,1,7,0V0A3,3,0,0,1,4,3H3A3,3,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(1195.689 900.807)" fill="#f99f3d"/>
+      <path id="Rectangle_9614" data-name="Rectangle 9614" d="M3.5,0h0A3.5,3.5,0,0,1,7,3.5V5A0,0,0,0,1,7,5H0A0,0,0,0,1,0,5V3.5A3.5,3.5,0,0,1,3.5,0Z" transform="translate(1195.689 906.807)" fill="#f99f3d"/>
+      <path id="Polygon_11" data-name="Polygon 11" d="M2.5,0,5,2H0Z" transform="translate(1201.689 905.007) rotate(180)" fill="#f99f3d"/>
+      <path id="Polygon_12" data-name="Polygon 12" d="M2.5,0,5,2H0Z" transform="translate(1196.689 905.906)" fill="#f99f3d"/>
+    </g>
+  </g>
+</svg>
