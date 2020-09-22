@@ -74,7 +74,7 @@
         <script src="../assets/js/cart.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
 		<script>
-			const socket = io('localhost:3000');
+			const socket = io('https://chatnode.azurewebsites.net/');
 			//if(document.querySelector('.random-room')) document.querySelector('.random-room').value = Math.floor((Math.random() * 1000000000) + 1);
 			document.querySelector('.chatapp-login-js').addEventListener('submit', function(e){
 				e.preventDefault();
